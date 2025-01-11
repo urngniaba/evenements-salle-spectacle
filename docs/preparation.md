@@ -13,3 +13,17 @@ Ce projet consiste à développer un site web intuitif et performant pour la ges
 7.	**Personnalisation :** Design adaptable aux couleurs et au style de la salle de spectacle.
 
 Le site vise à améliorer l'efficacité organisationnelle des gestionnaires, tout en offrant une expérience moderne et pratique aux spectateurs. Il est conçu pour être facilement extensible, sécurisé et compatible avec les appareils mobiles.
+
+# Sites web de référence
+- [https://spectacledirect.com/](https://spectacledirect.com/)
+- [https://www.lediamant.ca/fr](https://www.lediamant.ca/fr)
+- [https://www.gestev.com/](https://www.gestev.com/)
+
+# Couleurs à utiliser éventuellement
+- #FFFFFF
+- #FBD702
+- #F69DA4
+- #242947
+- #DC7728
+- #0B6D62
+- #FF6C37

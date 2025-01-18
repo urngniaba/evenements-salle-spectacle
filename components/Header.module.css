@@ -1,0 +1,55 @@
+.header {
+    padding-top: 1rem;
+    background-color: #fdfdfd;
+    margin: 0;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header ul li {
+    float: left;
+}
+
+.header ul li:last-child {
+    float: right;
+}
+
+.header ul li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.header ul li a:hover {
+    background-color: #eee;
+    border-radius: 2em;
+}
+
+.logo {
+    height: 2em;
+}
+
+.header button {
+    display: inline-block;
+    margin-right: 3em;
+    margin-left: 3em;
+    height: 2.5em;
+    border: none;
+    border-radius: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #F69DA4;
+    font-weight: bold;
+}
+
+.header button:hover{
+    cursor: pointer;
+    color: white;
+}

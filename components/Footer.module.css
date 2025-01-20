@@ -1,0 +1,16 @@
+.footer{
+    padding: 1rem;
+    background-color: #242947;
+    color: #fff;
+
+    display: flex; /* Active le modèle Flexbox */
+    justify-content: space-between; 
+    align-items:end;
+
+
+}
+.footer span {
+    letter-spacing: 0px;
+    flex-shrink: 0;
+    color: white;
+}

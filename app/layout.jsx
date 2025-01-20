@@ -1,3 +1,5 @@
+import Affichage from "@/components/Affichage";
+import Footer from "@/components/Footer";
 import "./globals.css";
 import Header from "@/components/Header";
 import styles from "@/app/layout.module.css"
@@ -15,6 +17,8 @@ export default function RootLayout({ children }) {
                 <main>
                     {children}
                 </main>
+                <Affichage />
+                <Footer />
             </body>
         </html>
     );

@@ -1,0 +1,62 @@
+.banniere {
+    text-align: center;
+    background-image: url("../public/banniere.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 0.1em;
+}
+
+.banniere h1{
+    color: white;
+    padding-top: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cadre_jaune {
+    background-color: #FBD702;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    padding: 0.2em;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 1.1em 0 1.1em 0;
+}
+
+.zone_recherche {
+    background-color: #ddd;
+    padding-top: 3.5em;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5em;
+    margin-bottom: 7em;
+    height: 10em;
+    border-radius: 2em;
+    opacity: 0.8;
+}
+
+.banniere input, .banniere button{
+    display: inline-block;
+    margin-right: 3em;
+    height: 3em;
+    width: 15em;
+    border: none;
+    border-radius: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.banniere button{
+    background-color: #FBD702;
+    font-weight: bold;
+}
+.banniere button:hover {
+    cursor: pointer;
+}
+
+.banniere p{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-bottom: 2em;
+}

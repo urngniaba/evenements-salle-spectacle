@@ -1,8 +1,8 @@
 import Affichage from "@/components/Affichage";
-import "./globals.css";
-
 import Footer from "@/components/Footer";
-
+import "./globals.css";
+import Header from "@/components/Header";
+import styles from "@/app/layout.module.css"
 
 export const metadata = {
     title: "Create Next App",
@@ -12,17 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body >
-
+            <body className={styles.body}>
+                <Header />
                 <main>
                     {children}
                 </main>
-
                 <Affichage />
-                
                 <Footer />
             </body>
-
         </html>
     );
 }

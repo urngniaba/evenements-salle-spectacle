@@ -29,8 +29,8 @@ export default function Affichage() {
                         <span>Ambiance festif</span>
                         <span>Musical</span>
                         <span>Soiree dansante (Parade, défilé)</span>
+                        <button className={styles.button}>Détail spectacle</button>
                     </div>
-                    <span className={styles.button}>Détail spectacle</span>
                 </div>
 
                 <div className={styles.card}>
@@ -40,8 +40,8 @@ export default function Affichage() {
                         <span>Opera</span>
                         <span>Silence Musical</span>
                         <span>Soiree dansante (Parade, défilé)</span>
+                        <button className={styles.button}>Détail spectacle</button>
                     </div>
-                    <span className={styles.button}>Détail spectacle</span>
                 </div>
 
                 <div className={styles.card}>
@@ -51,8 +51,8 @@ export default function Affichage() {
                         <span>Spectacle de rue</span>
                         <span>Mix et Remix, Platine</span>
                         <span>Soiree dansante (Parade, défilé)</span>
+                        <button className={styles.button}>Détail spectacle</button>
                     </div>
-                    <span className={styles.button}>Détail spectacle</span>
                 </div>
 
                 <div className={styles.card}>
@@ -62,8 +62,8 @@ export default function Affichage() {
                         <span>Spectacle de rue</span>
                         <span>Spectacle de rue divers</span>
                         <span>Histoires (Drame, comedie)</span>
+                        <button className={styles.button}>Détail spectacle</button>
                     </div>
-                    <span className={styles.button}>Détail spectacle</span>
                 </div>
 
                 <div className={styles.card}>
@@ -73,8 +73,8 @@ export default function Affichage() {
                         <span>Meilleure films</span>
                         <span>Livre et conte en pojection</span>
                         <span>Films humour (clown, standUp)</span>
+                        <button className={styles.button}>Détail spectacle</button>
                     </div>
-                    <span className={styles.button}>Détail spectacle</span>
                 </div>
 
                 <div className={styles.card}>
@@ -84,8 +84,9 @@ export default function Affichage() {
                         <span>Spectacle de rue</span>
                         <span>Spectacle de rue divers</span>
                         <span>Concert Caritatif (cagnotte)</span>
+                        <button className={styles.button}>Détail spectacle</button>
                     </div>
-                    <span className={styles.button}>Détail spectacle</span>
+                    
                 </div>
             </div>
         </div>

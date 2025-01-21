@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import Card from './Card';
 import logo1 from '@/public/imageAffichage/concert.jpg'
 import logo2 from '@/public/imageAffichage/acousti.jpg'
 import logo3 from '@/public/imageAffichage/image2.jpg'
@@ -22,72 +22,48 @@ export default function Affichage() {
             <h2 className={styles.subtitle}>Découvrez des spectacles inoubliables avec Spectacle Direct !</h2>
 
             <div className={styles.cards}>
-                <div className={styles.card}>
+                <Card titre='Balle de danse'
+                    categorie='Ambiance festif'
+                    sous_categorie='Musical'
+                    description='Soiree dansante (Parade, défilé)'>
                     <Image src={logo1} alt="" className={styles.image} />
-                    <h3>Balle de danse</h3>
-                    <div className={styles.tags}>
-                        <span>Ambiance festif</span>
-                        <span>Musical</span>
-                        <span>Soiree dansante (Parade, défilé)</span>
-                        <button className={styles.button}>Détail spectacle</button>
-                    </div>
-                </div>
-
-                <div className={styles.card}>
+                </Card>
+                
+                <Card titre='Concert acousti'
+                    categorie='Opera'
+                    sous_categorie='Silence Musical'
+                    description='Soiree dansante (Parade, défilé)'>
                     <Image src={logo2} alt="" className={styles.image} />
-                    <h3>Concert acousti</h3>
-                    <div className={styles.tags}>
-                        <span>Opera</span>
-                        <span>Silence Musical</span>
-                        <span>Soiree dansante (Parade, défilé)</span>
-                        <button className={styles.button}>Détail spectacle</button>
-                    </div>
-                </div>
+                </Card>
 
-                <div className={styles.card}>
+                <Card titre='Concert DJ exterieur'
+                    categorie='Spectacle de rue'
+                    sous_categorie='Mix et Remix, Platine'
+                    description='Soiree dansante (Parade, défilé)'>
                     <Image src={logo3} alt="" className={styles.image} />
-                    <h3>Concert DJ exterieur</h3>
-                    <div className={styles.tags}>
-                        <span>Spectacle de rue</span>
-                        <span>Mix et Remix, Platine</span>
-                        <span>Soiree dansante (Parade, défilé)</span>
-                        <button className={styles.button}>Détail spectacle</button>
-                    </div>
-                </div>
+                </Card>
 
-                <div className={styles.card}>
+                <Card titre='Scene Theatrales'
+                    categorie='Spectacle de rue'
+                    sous_categorie='Spectacle de rue'
+                    description='Histoires (Drame, comedie)'>
                     <Image src={logo4} alt="" className={styles.image} />
-                    <h3>Scene Theatrales</h3>
-                    <div className={styles.tags}>
-                        <span>Spectacle de rue</span>
-                        <span>Spectacle de rue divers</span>
-                        <span>Histoires (Drame, comedie)</span>
-                        <button className={styles.button}>Détail spectacle</button>
-                    </div>
-                </div>
+                </Card> 
 
-                <div className={styles.card}>
+                <Card titre='Projection Cinematographique'
+                    categorie='Meilleurs films'
+                    sous_categorie='Livre et conte en pojection'
+                    description='Films humour (clown, standUp)'>
                     <Image src={logo5} alt="" className={styles.image} />
-                    <h3>Projection Cinematographique</h3>
-                    <div className={styles.tags}>
-                        <span>Meilleure films</span>
-                        <span>Livre et conte en pojection</span>
-                        <span>Films humour (clown, standUp)</span>
-                        <button className={styles.button}>Détail spectacle</button>
-                    </div>
-                </div>
+                </Card> 
 
-                <div className={styles.card}>
+                <Card titre='Graines de Lumières'
+                    categorie='Meilleurs films'
+                    sous_categorie='Acapellat'
+                    description='Concert Caritatif (cagnotte)'>
                     <Image src={logo6} alt="" className={styles.image} />
-                    <h3>Graines de Lumières</h3>
-                    <div className={styles.tags}>
-                        <span>Spectacle de rue</span>
-                        <span>Spectacle de rue divers</span>
-                        <span>Concert Caritatif (cagnotte)</span>
-                        <button className={styles.button}>Détail spectacle</button>
-                    </div>
-                    
-                </div>
+                </Card> 
+                   
             </div>
         </div>
     );

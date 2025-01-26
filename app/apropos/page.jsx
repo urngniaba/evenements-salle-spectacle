@@ -34,14 +34,60 @@ export default function Apropos() {
           <br></br>
           <br></br>
           <br></br>
-          
+
           <span className={styles.citation}>
-          - Jean-Michel Raynal, Fondateur de Spectacle Direct
-        </span>
+            - Jean-Michel Raynal, Fondateur de Spectacle Direct
+          </span>
         </p>
-        
       </div>
 
+      <div className={styles.artistesContainer}>
+        <p className={styles.artistesText}>Et pour les artistes de:</p>
+      </div>
+
+      <div className={styles.featuresContainer}>
+        <div className={styles.feature}>
+          <Image src={message1} alt="" className={styles.featureImage} />
+          <p className={styles.featureText}>
+            Découvrir et choisir les spectacles qui correspondent à leurs attentes et besoins
+          </p>
+        </div>
+        <div className={styles.feature}>
+          <Image src={message2} alt="" className={styles.featureImage} />
+          <p className={styles.featureText}>Contacter les artistes</p>
+        </div>
+
+        <div className={styles.feature}>
+          <Image src={message3} alt="" className={styles.featureImage} />
+          <p className={styles.featureText}>
+            Organiser la prestation en direct avec l'artiste ou avec l'aide de notre agence artistique
+          </p>
+        </div>
+      </div>
+
+      <div className={styles.artistesContainer}>
+        <p className={styles.artistesText}>Et pour les artistes de:</p>
+      </div>
+
+      <div className={styles.featuresContainer}>
+        <div className={styles.feature}>
+          <Image src={message4} alt="" className={styles.featureImage} />
+          <p className={styles.featureText}>
+            Découvrir et choisir les spectacles qui correspondent à leurs attentes et besoins
+          </p>
+        </div>
+        <div className={styles.feature}>
+          <Image src={message5} alt="" className={styles.featureImage} />
+          <p className={styles.featureText}>Contacter les artistes</p>
+        </div>
+
+        <div className={styles.feature}>
+          <Image src={message6} alt="" className={styles.featureImage} />
+          <p className={styles.featureText}>
+            Organiser la prestation en direct avec l'artiste ou avec l'aide de notre agence artistique
+          </p>
+        </div>
+      </div>
 
     </div>
   );

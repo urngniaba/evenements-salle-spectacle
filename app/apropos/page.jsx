@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContainerIcon from "./ContainerIcon";
 
 import styles from '@/app/apropos/page.module.css'
 
@@ -42,10 +43,16 @@ export default function Apropos() {
       </div>
 
       <div className={styles.artistesContainer}>
-        <p className={styles.artistesText}>Et pour les artistes de:</p>
+        <p className={styles.artistesText}>Grace au digital et a la nouvelle plateforme Spectacle Direct, il sera desormais tres facile pour les collectivites
+          territoriales, les comités d'entreprise, les producteurs de spectacle ou même les particuliers de :</p>
       </div>
 
       <div className={styles.featuresContainer}>
+
+        {/* <ContainerIcon slogant="les details compte" >
+        <Image src={message2} alt="" className={styles.featureImage}/>
+        <ContainerIcon /> */}
+
         <div className={styles.feature}>
           <Image src={message1} alt="" className={styles.featureImage} />
           <p className={styles.featureText}>
@@ -65,6 +72,7 @@ export default function Apropos() {
         </div>
       </div>
 
+      {/* je dois faire les props pour cette div */}
       <div className={styles.artistesContainer}>
         <p className={styles.artistesText}>Et pour les artistes de:</p>
       </div>
@@ -73,18 +81,20 @@ export default function Apropos() {
         <div className={styles.feature}>
           <Image src={message4} alt="" className={styles.featureImage} />
           <p className={styles.featureText}>
-            Découvrir et choisir les spectacles qui correspondent à leurs attentes et besoins
+            Faire connaître leurs spectacles au plus grand nombre
           </p>
         </div>
         <div className={styles.feature}>
           <Image src={message5} alt="" className={styles.featureImage} />
-          <p className={styles.featureText}>Contacter les artistes</p>
+          <p className={styles.featureText}>
+            Multiplier les prestations et optimiser les dates de tournée
+          </p>
         </div>
 
         <div className={styles.feature}>
           <Image src={message6} alt="" className={styles.featureImage} />
           <p className={styles.featureText}>
-            Organiser la prestation en direct avec l'artiste ou avec l'aide de notre agence artistique
+            Trouver de nouveaux artistes pour compléter leur équipe
           </p>
         </div>
       </div>

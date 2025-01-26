@@ -61,7 +61,7 @@
     /* L'image occupe 50% de la largeur */
     height: 300px;
     /* Garde les proportions */
-    border-radius: 8px;
+    border-radius: 22px;
     /* Ajoute des coins arrondis */
     object-fit: cover;
 }
@@ -96,7 +96,7 @@
 .artistesContainer {
     background-color: #EFAC01;
     /* Couleur jaune-orange pour le fond */
-    border-radius: 16px;
+    border-radius: 1.1em 0 1.1em 0;
     /* Coins arrondis */
     padding: 1rem 2rem;
     /* Espacement interne */
@@ -104,13 +104,13 @@
     /* Centre le texte horizontalement */
     margin: 2rem auto;
     /* Ajoute de l'espace autour du conteneur */
-    width: 50%;
+    width: 70%;
     /* Limite la largeur du conteneur */
 
 }
 
 .artistesText {
-    font-size: 1.2rem;
+    font-size: 18px;
     /* Taille du texte */
     font-weight: bold;
     /* Texte en gras */
@@ -121,31 +121,47 @@
 }
 
 .featuresContainer {
-    display: flex; /* Aligne les éléments sur une seule ligne */
-    justify-content: space-between; /* Répartit l'espace entre les colonnes */
-    align-items: flex-start; /* Aligne les colonnes en haut */
-    gap: 2rem; /* Ajoute un espace entre chaque colonne */
-    padding: 2rem 0; /* Ajoute de l'espacement autour du conteneur */
+    display: flex;
+    /* Aligne les éléments sur une seule ligne */
+    justify-content: space-between;
+    /* Répartit l'espace entre les colonnes */
+    align-items: flex-start;
+    /* Aligne les colonnes en haut */
+    gap: 2rem;
+    /* Ajoute un espace entre chaque colonne */
+    padding: 2rem 0;
+    /* Ajoute de l'espacement autour du conteneur */
 }
 
 
 .feature {
-    display: flex; /* Utilise Flexbox */
-    flex-direction: column; /* Aligne l'image et le texte en colonne */
-    align-items: center; /* Centre les éléments horizontalement */
-    text-align: center; /* Centre le texte */
-    width: 350px; /* Limite la largeur de chaque colonne */
+    display: flex;
+    /* Utilise Flexbox */
+    flex-direction: column;
+    /* Aligne l'image et le texte en colonne */
+    align-items: center;
+    /* Centre les éléments horizontalement */
+    text-align: center;
+    /* Centre le texte */
+    width: 350px;
+    /* Limite la largeur de chaque colonne */
 }
 
 .featureImage {
-    width: 50px; /* Taille fixe de l'image */
-    height: 40px; /* Conserve les proportions */
-    margin-bottom: 1rem; /* Ajoute de l'espace entre l'image et le texte */
+    width: 50px;
+    /* Taille fixe de l'image */
+    height: 40px;
+    /* Conserve les proportions */
+    margin-bottom: 1rem;
+    /* Ajoute de l'espace entre l'image et le texte */
     object-fit: cover;
 }
 
 .featureText {
-    font-size: 1rem; /* Taille de la police */
-    line-height: 1.5; /* Espacement entre les lignes */
-    color: #333; /* Couleur du texte */
+    font-size: 16px;
+    /* Taille de la police */
+    line-height: 1.5;
+    /* Espacement entre les lignes */
+    color: #333;
+    /* Couleur du texte */
 }

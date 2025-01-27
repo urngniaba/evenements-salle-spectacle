@@ -9,10 +9,12 @@ export default function Header() {
             <ul>
                 <li><Image src={logo} alt="Logo" className={styles.logo} /></li>
                 <li><Link href="/">Accueil</Link></li>
+
                 <li><Link href="/prestataire">Prestataire</Link></li>
                 <li><Link href="#">Demander un spectacle</Link></li>
                 <li>
                     <Link href="#">&Agrave; propos de nous</Link>
+
                     <button type="button">Connexion</button>    
                 </li>
             </ul>

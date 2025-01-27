@@ -1,0 +1,60 @@
+.prestataire{
+    display: flex;
+    padding: 2em;
+    margin: 2em 6em;
+    justify-content: space-between;
+}
+.prestataire_body{
+    text-align: center;
+}
+.image_prestation{
+    height: 50px;
+    width: 50px;
+}
+.banniere_prestataire{
+    text-align: center;
+    background-image: url("../../public/ImageAffichage/salle.jpg");
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+    /* margin-top: 5em; */
+    /* padding-bottom: 1em; */
+    object-fit: cover;
+    /* height: 30em; */
+    padding: 0 20em 2em 20em;
+}
+.banniere_prestataire h1, .banniere_prestataire h3, .consultation h1, .consultation h3 {
+    color: white;
+    padding-top: 1.5em;
+}
+
+.banniere_prestataire button, .consultation button {
+    background-color: #FBD702;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 3em;
+    height: 3em;
+    width: 15em;
+    border: none;
+    border-radius: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 3em;
+}
+
+.banniere_prestataire button:hover {
+    cursor: pointer;
+}
+.prestation_vente{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 6em;
+    margin-top: 5em;
+}
+.consultation{
+    text-align: center;
+    background-color: #0B6D62;
+    margin: 2em 6em;
+    padding: 0 10em 2em 10em;
+    border-radius: 0.5em;
+}

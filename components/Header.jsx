@@ -13,7 +13,7 @@ export default function Header() {
                 <li><Link href="/prestataire">Prestataire</Link></li>
                 <li><Link href="#">Demander un spectacle</Link></li>
                 <li>
-                    <Link href="#">&Agrave; propos de nous</Link>
+                    <Link href="/apropos">&Agrave; propos de nous</Link>
 
                     <button type="button">Connexion</button>    
                 </li>

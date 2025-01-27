@@ -3,6 +3,23 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 import Header from "@/components/Header";
 import styles from "@/app/layout.module.css"
+import { Roboto, Poppins } from 'next/font/google';
+
+// Configurer les polices de caracteres
+const roboto = Roboto({
+    subsets: ['latin'],
+    weight: ['400', '700'],
+    style: ['normal', 'italic'],
+    display: 'swap',
+    variable: '--font-roboto', // Les variables en css ont toujours deux tirets -- en avant
+});
+
+const poppins = Poppins({
+    subsets: ['latin'],
+    weight: '700',
+    display: 'swap',
+    variable: '--font-poppins',
+});
 
 export const metadata = {
     title: "Create Next App",
@@ -11,7 +28,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" className={`${roboto.variable} ${poppins.variable}`}>
             <body className={styles.body}>
                 <Header />
                 <main>

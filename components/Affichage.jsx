@@ -26,42 +26,42 @@ export default function Affichage() {
                     categorie='Ambiance festif'
                     sous_categorie='Musical'
                     description='Soiree dansante (Parade, défilé)'>
-                    <Image src={logo1} alt="" className={styles.image} />
+                    <Image src={logo1} alt="card" className={styles.image} />
                 </Card>
                 
                 <Card titre='Concert acousti'
                     categorie='Opera'
                     sous_categorie='Silence Musical'
                     description='Soiree dansante (Parade, défilé)'>
-                    <Image src={logo2} alt="" className={styles.image} />
+                    <Image src={logo2} alt="card" className={styles.image} />
                 </Card>
 
                 <Card titre='Concert DJ exterieur'
                     categorie='Spectacle de rue'
                     sous_categorie='Mix et Remix, Platine'
                     description='Soiree dansante (Parade, défilé)'>
-                    <Image src={logo3} alt="" className={styles.image} />
+                    <Image src={logo3} alt="card" className={styles.image} />
                 </Card>
 
                 <Card titre='Scene Theatrales'
                     categorie='Spectacle de rue'
                     sous_categorie='Spectacle de rue'
                     description='Histoires (Drame, comedie)'>
-                    <Image src={logo4} alt="" className={styles.image} />
+                    <Image src={logo4} alt="card" className={styles.image} />
                 </Card> 
 
                 <Card titre='Projection Cinematographique'
                     categorie='Meilleurs films'
                     sous_categorie='Livre et conte en pojection'
                     description='Films humour (clown, standUp)'>
-                    <Image src={logo5} alt="" className={styles.image} />
+                    <Image src={logo5} alt="card" className={styles.image} />
                 </Card> 
 
                 <Card titre='Graines de Lumières'
                     categorie='Meilleurs films'
                     sous_categorie='Acapellat'
                     description='Concert Caritatif (cagnotte)'>
-                    <Image src={logo6} alt="" className={styles.image} />
+                    <Image src={logo6} alt="card" className={styles.image} />
                 </Card> 
                    
             </div>

@@ -15,7 +15,7 @@ export default function Header() {
                 <li>
                     <Link href="/apropos">&Agrave; propos de nous</Link>
 
-                    <button type="button">Connexion</button>    
+                    <Link href='/connexion'>Connexion</Link>    
                 </li>
             </ul>
         </header>

@@ -14,7 +14,7 @@
     background-image: url('../../public/ImageApropos/image1.jpg');
     height: 300px;
     object-fit: cover;
-    margin: 1.3em 0em;
+    /* margin: 1.3em 0em; */
     padding-top: 5em;
     text-align: center;
     color: white;

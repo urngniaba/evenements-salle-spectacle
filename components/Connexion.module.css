@@ -27,10 +27,10 @@
 .closebtn {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: -1.5rem;
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -45,7 +45,6 @@
 
 /* Bouton de soumission */
 .submitbtn {
-    background: #FFD700;
     color: black;
     border: none;
     padding: 10px;
@@ -55,24 +54,26 @@
     font-size: 16px;
 }
 
-.submitbtn:hover {
-    background: #FFC300;
-}
-
-/* Lien vers connexion */
-.loginlink {
-    margin-top: 15px;
-}
-
 .loginlink  {
-    font-weight: bold;
+    font-weight: 2px;
     color: black;
     text-decoration: none;
 }
 
+.connex{
+    font-weight: bold;
+    margin-top: 15px;
+    /* background: #F69DA4; */
+    border-radius: 5px;
+}
+
+.connex:hover{
+    background: #F69DA4;
+}
+
 /* Bouton pour ouvrir le modal */
 .openmodalbtn {
-    background: pink;
+    background: #FFC300;
     padding: 10px;
     border-radius: 5px;
     border: none;

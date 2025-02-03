@@ -27,7 +27,7 @@ export default function Connexion({ isOpen, onClose }) {
 
                 <p className={styles.loginlink}>
                     Vous avez déjà un compte ?
-                    <Link href="/connexion">Connectez-vous</Link>
+                    <Link className={styles.connex} href="#">Connectez-vous</Link>
                 </p>
             </div>
         </div>

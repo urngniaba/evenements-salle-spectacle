@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContainerIcon from "./ContainerIcon";
+import EntetePage from "@/components/EntetePage";
 
 import styles from '@/app/apropos/page.module.css'
 
@@ -15,10 +16,9 @@ import message6 from '@/public/ImageApropos/message6.png'
 
 export default function Apropos() {
   return <>
-    <div className={styles.textSuperpose}>
-      <h1>SPECTACLE DIRECT</h1>
-      <h2>LE DIGITAL AU SERVICE DU SPECTACLE VIVANT</h2>
-    </div>
+    <EntetePage 
+    titre1="SPECTACLE DIRECT" 
+      titre2="LE DIGITAL AU SERVICE DU SPECTACLE VIVANT"/>
     <div className={styles.container}>
 
       <div className={styles.paragraghe}>

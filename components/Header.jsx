@@ -12,9 +12,10 @@ export default function Header() {
                 <li><Link href="/">Accueil</Link></li>
 
                 <li><Link href="/prestataire">Prestataire</Link></li>
-                <li><Link href="#">Demander un spectacle</Link></li>
+                <li><Link href="/apropos">&Agrave; propos de nous</Link></li>
+               
                 <li>
-                    <Link href="/apropos">&Agrave; propos de nous</Link>
+                    <Link href="/contact">Nous constacter</Link>
 
                     <button type="button">Connexion</button>    
                 </li>

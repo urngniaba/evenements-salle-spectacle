@@ -3,6 +3,7 @@
     padding: 2em;
     margin: 2em 6em;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .prestataire_body{
     text-align: center;

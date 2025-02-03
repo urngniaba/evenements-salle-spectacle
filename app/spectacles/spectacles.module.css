@@ -1,8 +1,11 @@
-.spectacle{
-    margin: 5em;
+.spectacles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: top;
+    flex-wrap: wrap;
 }
 
-.spectacle h1 {
-    background-image: url('../../public/ImageApropos/image1.jpg');
-    color: white;
+.spectacles h1, .spectacles h2{
+    text-align: center;
 }

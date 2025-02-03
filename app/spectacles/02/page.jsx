@@ -1,18 +1,37 @@
 import styles from "@/app/spectacles/spectacles.module.css";
 import Card from "@/components/Card";
+import EntetePage from "@/components/EntetePage";
 import Image from "next/image";
 import logo2 from '@/public/imageAffichage/acousti.jpg'
+import DescriptionSpectacle from "@/components/DescriptionSpectacle";
 
 export default function Spectacle02() {
     return <>
-        <Card titre='Concert acousti'
-            categorie='Opera'
-            sous_categorie='Silence Musical'
-            description='Soiree dansante (Parade, défilé)'
-            bouton='Faire une reservation' 
-            route='#' 
-            imageSrc={logo2}>
-        </Card>
+        <EntetePage
+            titre1="CONCERT ACOUSTI"
+            titre2="Vivez une soirée authentique avec notre concert acoustique" />
+
+        <div className={styles.spectacles}>
+            <Card titre='Concert acousti'
+                categorie='Lieu : 125 Rue des banques, K6P 4C3'
+                sous_categorie='Prix: 200 $ CAD'
+                description='Date : 26 Mars 2025'
+                bouton='Faire une reservation'
+                route='#'
+                imageSrc={logo2}>
+            </Card>
+
+            <DescriptionSpectacle
+                titre="Vibrations authentiques"
+                sous_titre="Une soirée acoustique inoubliable !" >
+
+                Plongez dans une ambiance chaleureuse et intimiste lors de notre concert acoustique exceptionnel ! Laissez-vous porter par les sons doux et authentiques des guitares, pianos et percussions légères, sublimés par des voix captivantes qui vous toucheront en plein cœur. Ce spectacle est une véritable invitation à vivre la musique dans sa forme la plus pure, sans artifices, où chaque note résonne avec émotion. <br /><br />
+
+                Les artistes présents vous offriront une sélection variée de morceaux envoûtants, allant des classiques revisités aux compositions originales empreintes de sincérité. Chaque chanson racontera une histoire et vous plongera dans un univers musical unique. Que vous soyez mélomane passionné ou simple amateur à la recherche d'une expérience musicale authentique, cette soirée promet de vous enchanter. <br /><br />
+
+              
+            </DescriptionSpectacle>
+        </div>
 
     </>
 }

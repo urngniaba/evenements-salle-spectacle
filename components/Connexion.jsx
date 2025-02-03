@@ -7,7 +7,6 @@ import styles from '@/components/Connexion.module.css'
 export default function Connexion({ isOpen, onClose }) {
     if (!isOpen)
         return null; // Cache le modal s'il est fermé
-
     return (
         <div className={styles.overlay}>
             <div className={styles.modal}>
@@ -17,7 +16,7 @@ export default function Connexion({ isOpen, onClose }) {
                 <form>
                     <input type="text" placeholder="Nom" required />
                     <input type="text" placeholder="Prénom" required />
-                    <input type="email" placeholder="Email" required />
+                    <input type="email" placeholder="E-mail" required />
                     <div className="password-container">
                         <input type="password" placeholder="Mot de passe" required />
                     </div>

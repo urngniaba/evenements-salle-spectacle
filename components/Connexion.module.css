@@ -63,12 +63,11 @@
 .connex{
     font-weight: bold;
     margin-top: 15px;
-    /* background: #F69DA4; */
     border-radius: 5px;
 }
 
 .connex:hover{
-    background: #F69DA4;
+    background: #FBD702;
 }
 
 /* Bouton pour ouvrir le modal */

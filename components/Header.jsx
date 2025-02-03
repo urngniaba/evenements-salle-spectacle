@@ -26,7 +26,7 @@ export default function Header() {
                    
                     <div>
                         <button className={connexionstyle.openmodalbtn} onClick={() => setModalOpen(true)}>
-                            S'inscrire
+                            Connexion
                         </button>
                         <Connexion isOpen={modalOpen} onClose={() => setModalOpen(false)} />
                     </div>

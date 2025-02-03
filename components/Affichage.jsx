@@ -21,49 +21,61 @@ export default function Affichage() {
             </p>
             <h2 className={styles.subtitle}>Découvrez des spectacles inoubliables avec Spectacle Direct !</h2>
 
-            <div className={styles.cards}>
+            <div className={styles.cardsContainer}>
                 <Card titre='Balle de danse'
                     categorie='Ambiance festif'
                     sous_categorie='Musical'
-                    description='Soiree dansante (Parade, défilé)'>
-                    <Image src={logo1} alt="card" className={styles.image} />
+                    description='Soiree dansante (Parade, défilé)'
+                    bouton='Détail spectacle'
+                    route='/spectacles/01'
+                    imageSrc={logo1}>
                 </Card>
-                
+
                 <Card titre='Concert acousti'
                     categorie='Opera'
                     sous_categorie='Silence Musical'
-                    description='Soiree dansante (Parade, défilé)'>
-                    <Image src={logo2} alt="card" className={styles.image} />
+                    description='Soiree dansante (Parade, défilé)'
+                    bouton='Détail spectacle'
+                    route='spectacles/02'
+                    imageSrc={logo2}>
                 </Card>
 
                 <Card titre='Concert DJ exterieur'
                     categorie='Spectacle de rue'
                     sous_categorie='Mix et Remix, Platine'
-                    description='Soiree dansante (Parade, défilé)'>
-                    <Image src={logo3} alt="card" className={styles.image} />
+                    description='Soiree dansante (Parade, défilé)'
+                    bouton='Détail spectacle'
+                    route='#'
+                    imageSrc={logo3}>
                 </Card>
 
                 <Card titre='Scene Theatrales'
                     categorie='Spectacle de rue'
                     sous_categorie='Spectacle de rue'
-                    description='Histoires (Drame, comedie)'>
-                    <Image src={logo4} alt="card" className={styles.image} />
-                </Card> 
+                    description='Histoires (Drame, comedie)'
+                    bouton='Détail spectacle'
+                    route='#'
+                    imageSrc={logo4}>
+                </Card>
 
                 <Card titre='Projection Cinematographique'
                     categorie='Meilleurs films'
                     sous_categorie='Livre et conte en pojection'
-                    description='Films humour (clown, standUp)'>
-                    <Image src={logo5} alt="card" className={styles.image} />
-                </Card> 
+                    description='Films humour (clown, standUp)'
+                    bouton='Détail spectacle'
+                    route='#'
+                    imageSrc={logo5}>
+                </Card>
 
                 <Card titre='Graines de Lumières'
                     categorie='Meilleurs films'
                     sous_categorie='Acapellat'
-                    description='Concert Caritatif (cagnotte)'>
-                    <Image src={logo6} alt="card" className={styles.image} />
-                </Card> 
-                   
+                    description='Concert Caritatif (cagnotte)'
+                    bouton='Détail spectacle'
+                    route='#'
+                    imageSrc={logo6}>
+                </Card>
+
             </div>
         </div>
     );

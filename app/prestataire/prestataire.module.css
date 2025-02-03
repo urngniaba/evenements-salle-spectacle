@@ -3,6 +3,7 @@
     padding: 2em;
     margin: 2em 6em;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .prestataire_body{
     text-align: center;
@@ -14,14 +15,9 @@
 .banniere_prestataire{
     text-align: center;
     background-image: url("../../public/ImageAffichage/salle.jpg");
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    /* background-size: 100% 100%; */
-    /* margin-top: 5em; */
-    /* padding-bottom: 1em; */
     object-fit: cover;
-    /* height: 30em; */
     padding: 0 20em 2em 20em;
+    border-top: #FDFDFD 0.1px solid;
 }
 .banniere_prestataire h1, .banniere_prestataire h3, .consultation h1, .consultation h3 {
     color: white;

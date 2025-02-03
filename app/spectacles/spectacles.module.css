@@ -1,0 +1,11 @@
+.spectacles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.spectacles h1, .spectacles h2{
+    text-align: center;
+}

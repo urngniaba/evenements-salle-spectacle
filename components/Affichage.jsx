@@ -11,6 +11,7 @@ import styles from './affichage.module.css';
 
 
 export default function Affichage() {
+    // Partie de la page d'accueil contenant la liste des spectacle 
     return (
         <div className={styles.container}>
             <h1 className={styles.titre}>Venez profiter de nos evenements avec des Spectacles Direct dans nos Salles!</h1>

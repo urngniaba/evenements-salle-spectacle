@@ -1,6 +1,7 @@
 
 import styles from './Footer.module.css';
 
+// Le pied de page
 export default function Footer() {
     return(
     <footer className={styles.footer}>

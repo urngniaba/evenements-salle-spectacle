@@ -12,6 +12,7 @@ import img3 from "@/public/images/prestation/p3.jpg"
 import img4 from "@/public/images/prestation/p4.jpg"
 import img5 from "@/public/images/prestation/p5.jpg"
 
+// Page du menu Prestataire
 export default function Prestataire() {
     return <div className={styles.prestataire_body}>
         <div className={styles.banniere_prestataire}>

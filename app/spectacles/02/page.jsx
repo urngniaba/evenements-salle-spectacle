@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo2 from '@/public/imageAffichage/acousti.jpg'
 import DescriptionSpectacle from "@/components/DescriptionSpectacle";
 
+// Spectacle 02 : Concert acousti
 export default function Spectacle02() {
     return <>
         <EntetePage
@@ -29,7 +30,7 @@ export default function Spectacle02() {
 
                 Les artistes présents vous offriront une sélection variée de morceaux envoûtants, allant des classiques revisités aux compositions originales empreintes de sincérité. Chaque chanson racontera une histoire et vous plongera dans un univers musical unique. Que vous soyez mélomane passionné ou simple amateur à la recherche d'une expérience musicale authentique, cette soirée promet de vous enchanter. <br /><br />
 
-              
+
             </DescriptionSpectacle>
         </div>
 

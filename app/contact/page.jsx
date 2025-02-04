@@ -1,6 +1,7 @@
 import styles from "@/app/contact/contact.module.css";
 import EntetePage from "@/components/EntetePage";
 
+// Page de contact
 export default function Contact() {
     return <>
         <EntetePage

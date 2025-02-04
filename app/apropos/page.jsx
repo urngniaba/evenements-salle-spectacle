@@ -1,10 +1,8 @@
 import Image from "next/image";
-import ContainerIcon from "./ContainerIcon";
 import EntetePage from "@/components/EntetePage";
 
 import styles from '@/app/apropos/page.module.css'
 
-import image1 from '@/public/ImageApropos/image1.jpg'
 import image2 from '@/public/ImageApropos/image2.jpg'
 
 import message1 from '@/public/ImageApropos/message1.png'
@@ -14,11 +12,12 @@ import message4 from '@/public/ImageApropos/message4.png'
 import message5 from '@/public/ImageApropos/message5.png'
 import message6 from '@/public/ImageApropos/message6.png'
 
+// Page du menu a propos de nous
 export default function Apropos() {
   return <>
-    <EntetePage 
-    titre1="SPECTACLE DIRECT" 
-      titre2="LE DIGITAL AU SERVICE DU SPECTACLE VIVANT"/>
+    <EntetePage
+      titre1="SPECTACLE DIRECT"
+      titre2="LE DIGITAL AU SERVICE DU SPECTACLE VIVANT" />
     <div className={styles.container}>
 
       <div className={styles.paragraghe}>
@@ -47,11 +46,6 @@ export default function Apropos() {
       </div>
 
       <div className={styles.featuresContainer}>
-
-        {/* <ContainerIcon slogant="les details compte" >
-        <Image src={message2} alt="" className={styles.featureImage}/>
-        <ContainerIcon /> */}
-
         <div className={styles.feature}>
           <Image src={message1} alt="" className={styles.featureImage} />
           <p className={styles.featureText}>

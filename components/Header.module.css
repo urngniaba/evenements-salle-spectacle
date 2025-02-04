@@ -1,7 +1,10 @@
 .header {
     padding-top: 1.2rem;
+    padding-bottom: 1rem;
+
     background-color: #fdfdfd;
     margin: 0;
+    height: 5em;
 }
 
 .header ul {

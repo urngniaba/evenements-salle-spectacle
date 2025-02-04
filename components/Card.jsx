@@ -1,15 +1,17 @@
 import styles from '@/components/Card.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
 
-export default function Card({ children, titre, categorie, sous_categorie, description }) {
+export default function Card({titre, categorie, sous_categorie, description, bouton, route, imageSrc }) {
     return (
         <div className={styles.card}>
-            {children}
+            <Image src={imageSrc} alt="card" className={styles.card_image} />
             <h3>{titre}</h3>
-            <div className={styles.tags}>
+            <div>
                 <span>{categorie}</span>
                 <span>{sous_categorie}</span>
                 <span>{description}</span>
-                <button className={styles.button}>Détail spectacle</button>
+                <Link href={route} className={styles.link}><button>{bouton}</button></Link> 
             </div>
         </div>
     )

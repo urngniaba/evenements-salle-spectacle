@@ -1,6 +1,7 @@
 .header {
-    padding-top: 1rem;
+    padding-top: 1.2rem;
     padding-bottom: 1rem;
+
     background-color: #fdfdfd;
     margin: 0;
     height: 5em;
@@ -30,12 +31,12 @@
 }
 
 .header ul li a:hover {
-    background-color: #eee;
     border-radius: 2em;
 }
 
 .logo {
-    height: 2em;
+    height: 2.5rem;
+    width: 10rem;
 }
 
 .header button {
@@ -47,7 +48,7 @@
     border-radius: 0.8em;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: #F69DA4;
+    background-color: #FBD702;
     font-weight: bold;
 }
 

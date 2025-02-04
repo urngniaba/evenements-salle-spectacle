@@ -5,6 +5,8 @@ import Image from "next/image";
 import logo1 from '@/public/imageAffichage/concert.jpg';
 import DescriptionSpectacle from "@/components/DescriptionSpectacle";
 
+
+// Spectacle 01 : Balle de danse
 export default function Spectacle01() {
     return <>
         <EntetePage

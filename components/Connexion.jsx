@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import styles from '@/components/Connexion.module.css'
 
+// Formulaire de connexion
 export default function Connexion({ isOpen, onClose }) {
     if (!isOpen)
         return null; // Cache le modal s'il est fermé

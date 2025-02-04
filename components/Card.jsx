@@ -2,6 +2,7 @@ import styles from '@/components/Card.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
+// Le composant representant un card
 export default function Card({titre, categorie, sous_categorie, description, bouton, route, imageSrc }) {
     return (
         <div className={styles.card}>

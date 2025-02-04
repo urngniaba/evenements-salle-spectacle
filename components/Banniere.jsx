@@ -1,6 +1,7 @@
 import styles from "@/components/Banniere.module.css"
 
 export default function Banniere() {
+    // La partie contenant la grande image juste en dessous de la barre de mennu sur la page d'accueil
     return <div className={styles.banniere}>
         <h1>SPECTACLE EN DIRECT, LE SPECTACLE EN TOUTE LIBERTE</h1>
         <div className={styles.cadre_jaune}>

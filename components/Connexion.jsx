@@ -6,7 +6,7 @@ import styles from '@/components/Connexion.module.css'
 
 export default function Connexion({ isOpen, onClose }) {
     if (!isOpen)
-        return null; // Cache le modal s'il est fermé
+        return null;
     return (
         <div className={styles.overlay}>
             <div className={styles.modal}>

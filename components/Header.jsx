@@ -1,6 +1,4 @@
 "use client"
-import connexionstyle from '@/components/Connexion.module.css'
-
 
 import styles from "@/components/Header.module.css"
 import Image from "next/image"
@@ -23,7 +21,7 @@ export default function Header() {
                   <li><Link href="/contact">Nous constacter</Link></li>
                 <li>
                     <div>
-                        <button className={connexionstyle.openmodalbtn} onClick={() => setModalOpen(true)}>
+                        <button className={styles.openmodalbtn} onClick={() => setModalOpen(true)}>
                             Connexion
                         </button>
                         <Connexion isOpen={modalOpen} onClose={() => setModalOpen(false)} />

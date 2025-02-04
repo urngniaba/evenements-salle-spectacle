@@ -69,12 +69,3 @@
 .connex:hover{
     background: #FBD702;
 }
-
-/* Bouton pour ouvrir le modal */
-.openmodalbtn {
-    background: #FFC300;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}

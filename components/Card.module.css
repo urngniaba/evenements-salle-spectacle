@@ -3,11 +3,16 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 390px;
+    width: 100%;
+    /* Pour occuper toute la largeur disponible */
+    max-width: 390px;
+    /* Limite la taille maximale */
     text-align: center;
     padding: 1em;
     overflow: hidden;
-    margin: 2em 0;
+    margin: 2em auto;
+    /* Centre la carte */
+    box-sizing: border-box;
 }
 
 .card:hover {
@@ -18,7 +23,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    /* margin: 0.5em 0; */
+    justify-content: center;
+    /* Aligne les éléments au centre */
 }
 
 .card span {
@@ -40,18 +46,79 @@
     font-size: 1rem;
     margin-top: 0.5em;
 }
+
 .card_image {
-    width: 350px;
+    width: 100%;
+    /* Pour être responsive */
+    max-width: 350px;
+    /* Limite la largeur de l'image */
     height: 170px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 0.2em;
 }
 
-.card Link {
+.link {
     text-decoration: none;
 }
 
-.link{
-    text-decoration: none;
+/* Media Queries pour les petits écrans */
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        /* La carte prend toute la largeur disponible sur les petits écrans */
+        padding: 1.5em;
+        /* Un peu plus de padding pour les petits écrans */
+    }
+
+    .card_image {
+        max-width: 100%;
+        /* L'image occupe toute la largeur */
+        height: auto;
+        /* Laisser l'image s'adapter en hauteur */
+    }
+
+    .card div {
+        flex-direction: column;
+        /* Les éléments sont empilés sur les petits écrans */
+        align-items: center;
+        /* Aligner les éléments au centre */
+    }
+
+    .card span {
+        font-size: 0.8rem;
+        /* Réduit légèrement la taille du texte */
+        padding: 4px 8px;
+    }
+
+    .card button {
+        font-size: 0.9rem;
+        /* Taille de texte plus petite pour les petits écrans */
+        padding: 8px 16px;
+    }
+}
+
+/* Media Queries pour les grands écrans */
+@media (min-width: 1200px) {
+    .card {
+        width: 400px;
+        /* Augmente la largeur de la carte sur grands écrans */
+    }
+
+    .card_image {
+        width: 100%;
+        height: 200px;
+        /* Augmente la hauteur de l'image sur grands écrans */
+    }
+
+    .card span {
+        font-size: 1rem;
+        /* Taille de texte plus grande */
+    }
+
+    .card button {
+        font-size: 1.1rem;
+        /* Taille du texte pour le bouton plus grande */
+        padding: 12px 24px;
+    }
 }

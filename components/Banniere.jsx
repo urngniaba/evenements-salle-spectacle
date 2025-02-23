@@ -3,9 +3,9 @@ import styles from "@/components/Banniere.module.css"
 export default function Banniere() {
     // La partie contenant la grande image juste en dessous de la barre de mennu sur la page d'accueil
     return <div className={styles.banniere}>
-        <h1>SPECTACLE EN DIRECT, LE SPECTACLE EN TOUTE LIBERTE</h1>
+        <h1>Vivez l’instant suspendu, le spectacle libre et vivant</h1>
         <div>
-            L'annuaire des spectacles pour les collectivités
+            Le calendrier des arts vivants pour les sociétés
         </div>
         <form action="">
             <input type="text" placeholder="Que recherchez-vous ?" />
@@ -14,10 +14,10 @@ export default function Banniere() {
             <button type="button">Rechercher</button>
         </form>
         <p>
-            Passez en direct ou faites vous accompagner !
+            Lancez-vous en live ou faites-vous épauler !
         </p>
         <p>
-            C'est vous qui décidez !
+            C’est à vous de choisir !
         </p>
     </div>
 }

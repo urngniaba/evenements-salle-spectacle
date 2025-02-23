@@ -1,57 +1,113 @@
 .card {
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 390px;
+    border: 0.06rem solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 24rem;
     text-align: center;
-    padding: 1em;
+    padding: 1rem;
     overflow: hidden;
-    margin: 2em 0;
+    margin: 2rem auto;
+    box-sizing: border-box;
 }
 
 .card:hover {
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
 }
 
 .card div {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
-    /* margin: 0.5em 0; */
+    gap: 1rem;
+    justify-content: center;
 }
 
 .card span {
-    background-color: #ffe3b3;
-    color: #555;
+    background-color: #efefef;
+    color: #252659;
     font-size: 0.9rem;
-    padding: 5px 10px;
-    border-radius: 15px;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.9rem;
 }
 
 .card button {
-    background-color: #FBD702;
-    color: black;
+    background-color: #252659;
+    color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 0.4rem;
     display: block;
     cursor: pointer;
-    font-size: 1rem;
-    margin-top: 0.5em;
+    font-size: .5rem;
+    border: 0.1em solid #252659;
 }
-.card_image {
-    width: 350px;
-    height: 170px;
+.card button:hover{
+    background-color: white;
+    color: #252659;
+    border: 0.01em solid #252659;
+}
+
+.card img {
+    width: 100%;
+    max-width: 22rem;
+    height: 10.5rem;
     object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 0.2em;
+    border-radius: 0.8rem;
+    margin-bottom: 0.1rem;
 }
 
-.card Link {
+.card a {
     text-decoration: none;
 }
 
-.link{
-    text-decoration: none;
+/* Media Queries pour les petits écrans */
+@media (max-width: 600px) {
+
+   
+    .card {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card span {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .card button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Media Queries pour les grands écrans */
+@media (min-width: 1200px) {
+
+    .card {
+        width: 25rem;
+    }
+
+    .card_image {
+        width: 100%;
+        height: 12.5rem;
+    }
+
+    .card span {
+        font-size: 1rem;
+    }
+
+    .card button {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
 }

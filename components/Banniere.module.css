@@ -1,61 +1,95 @@
 .banniere {
     text-align: center;
     background-image: url("../public/banniere.jpeg");
-    padding-bottom: 0.1em;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 1em;
     border-top: #FDFDFD 0.1px solid;
 }
 
-.banniere h1{
+.banniere h1 {
     color: white;
     padding-top: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
 }
 
 .cadre_jaune {
     background-color: #FBD702;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
-    padding: 0.2em;
-    margin-left: 25%;
-    margin-right: 25%;
+    padding: 0.5em;
+    margin: 2em auto;
     border-radius: 1.1em 0 1.1em 0;
+    max-width: 50%;
 }
 
 .zone_recherche {
     background-color: #ddd;
-    padding-top: 3.5em;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 5em;
-    margin-bottom: 7em;
-    height: 10em;
+    padding: 2em 1em;
+    margin: 3em auto;
     border-radius: 2em;
-    opacity: 0.8;
+    opacity: 0.9;
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
 }
 
-.banniere input, .banniere button{
-    display: inline-block;
-    margin-right: 3em;
+.banniere input,
+.banniere button {
     height: 3em;
-    width: 15em;
+    width: 100%;
+    max-width: 15em;
     border: none;
     border-radius: 0.8em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0 1em;
 }
 
-.banniere button{
+.banniere button {
     background-color: #FBD702;
     font-weight: bold;
 }
+
 .banniere button:hover {
     cursor: pointer;
+    background-color: #e0b600;
 }
 
-.banniere p{
+.banniere p {
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin-bottom: 2em;
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+    .banniere h1 {
+        font-size: 2rem;
+    }
+
+    .cadre_jaune {
+        font-size: 1.5rem;
+        max-width: 80%;
+    }
+
+    .zone_recherche {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    .banniere input,
+    .banniere button {
+        width: 100%;
+    }
+}
+
+/* Pour les grands écrans */
+@media (min-width: 769px) {
+    .zone_recherche {
+        flex-direction: row;
+    }
 }

@@ -1,124 +1,113 @@
 .card {
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 0.06rem solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.1);
     width: 100%;
-    /* Pour occuper toute la largeur disponible */
-    max-width: 390px;
-    /* Limite la taille maximale */
+    max-width: 24rem;
     text-align: center;
-    padding: 1em;
+    padding: 1rem;
     overflow: hidden;
-    margin: 2em auto;
-    /* Centre la carte */
+    margin: 2rem auto;
     box-sizing: border-box;
 }
 
 .card:hover {
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
 }
 
 .card div {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1rem;
     justify-content: center;
-    /* Aligne les éléments au centre */
 }
 
 .card span {
-    background-color: #ffe3b3;
-    color: #555;
+    background-color: #efefef;
+    color: #252659;
     font-size: 0.9rem;
-    padding: 5px 10px;
-    border-radius: 15px;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.9rem;
 }
 
 .card button {
-    background-color: #FBD702;
-    color: black;
+    background-color: #252659;
+    color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 0.4rem;
     display: block;
     cursor: pointer;
-    font-size: 1rem;
-    margin-top: 0.5em;
+    font-size: .5rem;
+    border: 0.1em solid #252659;
+}
+.card button:hover{
+    background-color: white;
+    color: #252659;
+    border: 0.01em solid #252659;
 }
 
-.card_image {
+.card img {
     width: 100%;
-    /* Pour être responsive */
-    max-width: 350px;
-    /* Limite la largeur de l'image */
-    height: 170px;
+    max-width: 22rem;
+    height: 10.5rem;
     object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 0.2em;
+    border-radius: 0.8rem;
+    margin-bottom: 0.1rem;
 }
 
-.link {
+.card a {
     text-decoration: none;
 }
 
 /* Media Queries pour les petits écrans */
 @media (max-width: 600px) {
+
+   
     .card {
         width: 100%;
-        /* La carte prend toute la largeur disponible sur les petits écrans */
-        padding: 1.5em;
-        /* Un peu plus de padding pour les petits écrans */
+        padding: 1.5rem;
     }
 
-    .card_image {
+    .card img {
         max-width: 100%;
-        /* L'image occupe toute la largeur */
         height: auto;
-        /* Laisser l'image s'adapter en hauteur */
     }
 
     .card div {
         flex-direction: column;
-        /* Les éléments sont empilés sur les petits écrans */
         align-items: center;
-        /* Aligner les éléments au centre */
     }
 
     .card span {
         font-size: 0.8rem;
-        /* Réduit légèrement la taille du texte */
-        padding: 4px 8px;
+        padding: 0.25rem 0.5rem;
     }
 
     .card button {
         font-size: 0.9rem;
-        /* Taille de texte plus petite pour les petits écrans */
-        padding: 8px 16px;
+        padding: 0.5rem 1rem;
     }
 }
 
 /* Media Queries pour les grands écrans */
 @media (min-width: 1200px) {
+
     .card {
-        width: 400px;
-        /* Augmente la largeur de la carte sur grands écrans */
+        width: 25rem;
     }
 
     .card_image {
         width: 100%;
-        height: 200px;
-        /* Augmente la hauteur de l'image sur grands écrans */
+        height: 12.5rem;
     }
 
     .card span {
         font-size: 1rem;
-        /* Taille de texte plus grande */
     }
 
     .card button {
-        font-size: 1.1rem;
-        /* Taille du texte pour le bouton plus grande */
-        padding: 12px 24px;
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
     }
 }

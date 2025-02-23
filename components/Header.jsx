@@ -4,7 +4,7 @@ import connexionstyle from '@/components/Connexion.module.css'
 
 import styles from "@/components/Header.module.css"
 import Image from "next/image"
-import logo from "@/public/logo.png"
+import logo from "@/public/logo2.png"
 import Link from "next/link"
 
 import { useState } from "react";

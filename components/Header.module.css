@@ -1,25 +1,23 @@
 .header {
     padding-top: 1.2rem;
     padding-bottom: 1rem;
-
     background-color: #fdfdfd;
     margin: 0;
-    height: 5em;
+    height: auto;
 }
 
 .header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header ul li {
-    float: left;
-}
-
-.header ul li:last-child {
-    float: right;
+    padding: 0.5rem;
 }
 
 .header ul li a {
@@ -31,28 +29,66 @@
 }
 
 .header ul li a:hover {
-    border-radius: 2em;
+    color: #252659;
+    text-decoration: underline;
 }
 
 .logo {
     height: 2.5rem;
-    width: 10rem;
+    width: 8rem;
+    border-radius: 50%;
 }
 
 .header button {
     display: inline-block;
-    margin-right: 3em;
-    margin-left: 3em;
     height: 2.5em;
     border: none;
     border-radius: 0.8em;
-    padding-left: 1em;
-    padding-right: 1em;
-    background-color: #FBD702;
+    padding: 0.5em 1em;
+    background-color: #252659;
     font-weight: bold;
+    color: white;
 }
 
-.header button:hover{
+.header button:hover {
     cursor: pointer;
-    color: white;
+    color: #252659;
+    background-color: white;
+    border: 0.1rem solid #252659;
+}
+
+@media (max-width: 768px) {
+    .header ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header ul li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .header ul li:last-child {
+        align-self: flex-end;
+    }
+
+    .logo {
+        height: 2rem;
+        width: 6rem;
+    }
+
+    .header button {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .header ul {
+        flex-direction: row;
+    }
+
+    .header ul li:last-child {
+        margin-left: auto;
+    }
 }

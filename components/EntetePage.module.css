@@ -1,9 +1,41 @@
-.entetePage{
+.entetePage {
     background-image: url('../public/ImageApropos/image1.jpg');
+    background-size: cover;
+    background-position: center;
     height: 10em;
-    object-fit: cover;
     padding-top: 0.5em;
     text-align: center;
     color: white;
     margin-bottom: 0.5em;
+}
+
+/* Pour les petits écrans */
+@media (max-width: 600px) {
+    .entetePage {
+        height: 8em;
+        padding-top: 0.3em;
+    }
+
+    .entetePage h1 {
+        font-size: 1.5rem;
+    }
+
+    .entetePage h2 {
+        font-size: 1rem;
+    }
+}
+
+/* Pour les écrans moyens */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .entetePage {
+        height: 9em;
+    }
+
+    .entetePage h1 {
+        font-size: 2rem;
+    }
+
+    .entetePage h2 {
+        font-size: 1.2rem;
+    }
 }

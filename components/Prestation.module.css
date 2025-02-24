@@ -1,7 +1,27 @@
-.prestation{
-    width: 17%;
+.prestation {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
-.image_prestation{
-    height: 50px;
-    width: 75px;
+
+.image_prestation {
+    height: auto;
+    max-width: 100px;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .prestation {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .prestation {
+        width: 17%;
+    }
 }

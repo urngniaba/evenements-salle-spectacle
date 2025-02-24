@@ -1,3 +1,4 @@
+/* Styles de base */
 .container {
     text-align: center;
     padding: 1.3em 10em;
@@ -12,13 +13,9 @@
 
 .paragraghe {
     display: flex;
-
     align-items: flex-start;
-
     gap: 3rem;
-
     max-width: 1400px;
-
     width: 100%;
     margin-left: 1.5em;
     text-align: justify;
@@ -26,16 +23,9 @@
 
 .photo1 {
     width: 600px;
-
     height: 300px;
-
     border-radius: 22px;
-
     object-fit: cover;
-}
-
-.photo1 span {
-    display: inline;
 }
 
 .paragraghe p {
@@ -58,73 +48,98 @@
 
 .artistesContainer {
     background-color: #EFAC01;
-    /* Couleur jaune-orange pour le fond */
     border-radius: 1.1em 0 1.1em 0;
-    /* Coins arrondis */
     padding: 1rem 2rem;
-    /* Espacement interne */
     text-align: center;
-    /* Centre le texte horizontalement */
     margin: 2rem auto;
-    /* Ajoute de l'espace autour du conteneur */
     width: 70%;
-    /* Limite la largeur du conteneur */
-
 }
 
 .artistesText {
     font-size: 18px;
-    /* Taille du texte */
     font-weight: bold;
-    /* Texte en gras */
     color: black;
-    /* Couleur du texte */
     margin: 0;
-    /* Supprime les marges externes */
 }
 
 .featuresContainer {
     display: flex;
-    /* Aligne les éléments sur une seule ligne */
     justify-content: space-between;
-    /* Répartit l'espace entre les colonnes */
     align-items: flex-start;
-    /* Aligne les colonnes en haut */
     gap: 2rem;
-    /* Ajoute un espace entre chaque colonne */
     padding: 2rem 0;
-    /* Ajoute de l'espacement autour du conteneur */
 }
-
 
 .feature {
     display: flex;
-    /* Utilise Flexbox */
     flex-direction: column;
-    /* Aligne l'image et le texte en colonne */
     align-items: center;
-    /* Centre les éléments horizontalement */
     text-align: center;
-    /* Centre le texte */
     width: 350px;
-    /* Limite la largeur de chaque colonne */
 }
 
 .featureImage {
     width: 50px;
-    /* Taille fixe de l'image */
     height: 40px;
-    /* Conserve les proportions */
     margin-bottom: 1rem;
-    /* Ajoute de l'espace entre l'image et le texte */
     object-fit: cover;
 }
 
 .featureText {
     font-size: 16px;
-    /* Taille de la police */
     line-height: 1.5;
-    /* Espacement entre les lignes */
     color: #333;
-    /* Couleur du texte */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        padding: 1.3em 5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.3em 2em;
+    }
+
+    .paragraghe {
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .paragraghe p {
+        padding: 1rem;
+    }
+
+    .photo1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .artistesContainer {
+        width: 90%;
+    }
+
+    .featuresContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.3em 1em;
+    }
+
+    .featureImage {
+        width: 40px;
+        height: 32px;
+    }
 }

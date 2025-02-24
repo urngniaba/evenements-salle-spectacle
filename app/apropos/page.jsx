@@ -23,19 +23,15 @@ export default function Apropos() {
       <div className={styles.paragraghe}>
         <Image src={image2} alt="" className={styles.photo1} />
         <p>
-          <br></br>"Fort d'une expérience d'artiste et après plus de 20 ans dans l'organisation de spectacles à la tête
+          "Fort d'une expérience d'artiste et après plus de 20 ans dans l'organisation de spectacles à la tête
           d'une agence artistique, j'ai décidé de créer le site dont j'ai toujours rêvé. Pour survivre, le secteur de
           la création artistique doit se transformer et adopter les nouvelles technologies. À la fois pour aider les
           artistes à rendre plus visible leur talent et à mieux vivre de leur art et pour faciliter les démarches des
           organisateurs afin que les prestations de spectacle vivant se multiplient. Je suis convaincu que c'est
           en rapprochant au maximum ces deux mondes et en éliminant les barrières qui les séparent que nous
           parviendrons à faire mieux vivre l'ensemble des acteurs du secteur."
-          <br></br>
-          <br></br>
-          <br></br>
-
           <span className={styles.citation}>
-            - Jean-Michel Raynal, Fondateur de Spectacle Direct
+            - Jean Michel Kankan, Fondateur de Spectacle Direct
           </span>
         </p>
       </div>

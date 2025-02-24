@@ -35,7 +35,7 @@ export default function Apropos() {
           <br></br>
 
           <span className={styles.citation}>
-            - Jean-Michel Raynal, Fondateur de Spectacle Direct
+            - Jean Michel Kankan, Fondateur de Spectacle Direct
           </span>
         </p>
       </div>

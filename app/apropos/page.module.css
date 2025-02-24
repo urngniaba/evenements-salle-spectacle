@@ -47,18 +47,18 @@
 }
 
 .artistesContainer {
-    background-color: #EFAC01;
+    background-color: #252659;
     border-radius: 1.1em 0 1.1em 0;
     padding: 1rem 2rem;
     text-align: center;
     margin: 2rem auto;
     width: 70%;
+    opacity: 0.9;
 }
 
 .artistesText {
     font-size: 18px;
-    font-weight: bold;
-    color: black;
+    color: white;
     margin: 0;
 }
 

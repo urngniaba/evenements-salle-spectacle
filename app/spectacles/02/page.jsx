@@ -26,13 +26,13 @@ export default function Spectacle02() {
                 titre="Vibrations authentiques"
                 sous_titre="Une soirée acoustique inoubliable !" >
 
-                Plongez dans une ambiance chaleureuse et intimiste lors de notre concert acoustique exceptionnel ! Laissez-vous porter par les sons doux et authentiques des guitares, pianos et percussions légères, sublimés par des voix captivantes qui vous toucheront en plein cœur. Ce spectacle est une véritable invitation à vivre la musique dans sa forme la plus pure, sans artifices, où chaque note résonne avec émotion. <br /><br />
-
-                Les artistes présents vous offriront une sélection variée de morceaux envoûtants, allant des classiques revisités aux compositions originales empreintes de sincérité. Chaque chanson racontera une histoire et vous plongera dans un univers musical unique. Que vous soyez mélomane passionné ou simple amateur à la recherche d'une expérience musicale authentique, cette soirée promet de vous enchanter. <br /><br />
-
-
+                <p>
+                    Plongez dans une ambiance chaleureuse et intimiste lors de notre concert acoustique exceptionnel ! Laissez-vous porter par les sons doux et authentiques des guitares, pianos et percussions légères, sublimés par des voix captivantes qui vous toucheront en plein cœur. Ce spectacle est une véritable invitation à vivre la musique dans sa forme la plus pure, sans artifices, où chaque note résonne avec émotion.
+                </p>
+                <p>
+                    Les artistes présents vous offriront une sélection variée de morceaux envoûtants, allant des classiques revisités aux compositions originales empreintes de sincérité. Chaque chanson racontera une histoire et vous plongera dans un univers musical unique. Que vous soyez mélomane passionné ou simple amateur à la recherche d'une expérience musicale authentique, cette soirée promet de vous enchanter.
+                </p>
             </DescriptionSpectacle>
         </div>
-
     </>
 }

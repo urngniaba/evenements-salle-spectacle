@@ -102,7 +102,7 @@ export default function Contact() {
             <p>
                 Localisation : <span>458 Bank street, Ottawa, ON J4L 9E3</span>
             </p>
-            <form action={formAction}>
+            <form action={formAction} noValidate>
                 <div className={styles.row}>
                     <div className={styles.formGroup}>
                         <label htmlFor="email">Email</label>

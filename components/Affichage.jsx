@@ -14,13 +14,13 @@ export default function Affichage() {
     // Partie de la page d'accueil contenant la liste des spectacle 
     return (
         <div className={styles.container}>
-            <h1>Venez profiter de nos evenements avec des Spectacles Direct dans nos Salles!</h1>
+            <h1>Venez profiter de nos evenements avec des Spectacles inoubliable dans nos Salles!</h1>
             <p>
-                Avec Spectacle Direct, vous avez accès à une sélection des meilleures prestations de spectacles, allant des bals de danse aux projections cinématographiques en passant par les concerts acoustiques, les DJ en extérieur et les scènes théâtrales.
+                Avec Festi , vous avez accès à une sélection des meilleures prestations de spectacles, allant des bals de danse aux projections cinématographiques en passant par les concerts acoustiques, les DJ en extérieur et les scènes théâtrales.
                 Il vous est désormais très facile de découvrir et de choisir des spectacles variés, adaptés à vos attentes et besoins. Que vous recherchiez une ambiance festive, un moment de détente musicale, ou encore une performance théâtrale, nous avons tout ce qu’il vous faut.
                 Vous pouvez organiser directement la prestation avec l'artiste ou demander l'aide de notre agence artistique. Nous vous accompagnerons avec plaisir dans l'organisation de votre événement pour en faire une expérience inoubliable.
             </p>
-            <h2>Découvrez des spectacles inoubliables avec Spectacle Direct !</h2>
+            <h2>Découvrez des spectacles inoubliables chez nous chez vous !</h2>
 
             <div className={styles.cardsContainer}>
                 <Card titre='Balle de danse'

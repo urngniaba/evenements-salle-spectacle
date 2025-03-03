@@ -2,7 +2,9 @@
 
 import styles from "@/components/Contact.module.css";
 import EntetePage from "@/components/EntetePage";
+import { contactValidation } from "@/validations/contactValidation";
 import { useActionState, useState } from "react";
+import { contactServeur } from "@/actions/contactServeur";
 
 export default function Contact() {
 
@@ -13,71 +15,38 @@ export default function Contact() {
      * 
      * @param {FormData} formData 
      */
-    const handleSubmit = (previousState, formData) => {
-        let email = formData.get("email")
-        let telephone = formData.get("telephone")
-        let objet = formData.get("objet")
-        let message = formData.get("message")
+    const handleSubmit = async (previousState, formData) => {
 
-        let newState = {
-            email: { valeur: "", erreur: null },
-            telephone: { valeur: "", erreur: null },
-            objet: { valeur: "", erreur: null },
-            message: { valeur: "", erreur: null },
-        }
+        let [erreur, newState] = contactValidation(formData)
 
-        let erreur = false
-        //    l'email est requis
-        if (!email) {
-            erreur = true
-            newState.email.erreur = "L'email est requis"
-        }
-        // L'email doit respecter le bon format
-        else if (!email.match(/(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/)) {
-            erreur = true
-            newState.email.erreur = "L'email saisi n'est pas valide"
-        }
-
-        //    le telephone est requis
-        if (!telephone) {
-            erreur = true
-            newState.telephone.erreur = "Le numéro téléphone est requis"
-        }
-
-        // Le telephone doit respecteer le format canadien
-        else if (!telephone.match(/^(?:\+1\s?)?(?:\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}$/)) {
-            erreur = true
-            newState.telephone.erreur = "Le numéro de téléphone est incorrect"
-        }
-
-        //    l'objet du message est requis
-        if (!objet) {
-            erreur = true
-            newState.objet.erreur = "L'objet du message est requis"
-        }
-
-        //    le message est requis
-        if (!message) {
-            erreur = true
-            newState.message.erreur = "Le message est requis"
+        if (!erreur) {
+            [erreur, newState] = await contactServeur(formData)
         }
 
         if (erreur) {
-            newState.email.valeur = email
-            newState.telephone.valeur = telephone
-            newState.objet.valeur = objet
-            newState.message.valeur = message
-
-        } else {
+            // On garde les anciennes valeurs des champs en cas d'erreur
+            newState.email.valeur = formData.get("email")
+            newState.telephone.valeur = formData.get("telephone")
+            newState.objet.valeur = formData.get("objet")
+            newState.message.valeur = formData.get("message")
+        }
+        else {
             setSuccess("Merci de nous avoir contacté !")
             setIsVisible(true)
 
             setTimeout(() => {
                 setIsVisible(false)
             }, 3000)
-        }
-        return newState
 
+            // Affichage dans la console
+            console.log("Message envoyé avec succès")
+            console.log("Corriel de l'expéditeur : ", formData.get("email"))
+            console.log("Téléphone de l'expéditeur : ", formData.get("telephone"))
+            console.log("Objet du message : ", formData.get("objet"))
+            console.log("Contenu du message : ", formData.get("message"))
+        }
+
+        return newState
     }
 
     const [formState, formAction] = useActionState(handleSubmit, {

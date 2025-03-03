@@ -14,7 +14,7 @@ export default function Connexion({ isOpen, onClose }) {
                 <button className={styles.closebtn} onClick={onClose}>✖</button>
                 <h1>Créez votre compte</h1>
 
-                <form>
+                <form noValidate>
                     <input type="text" placeholder="Nom" required />
                     <input type="text" placeholder="Prénom" required />
                     <input type="email" placeholder="E-mail" required />

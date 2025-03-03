@@ -7,7 +7,7 @@ export default function Banniere() {
         <div>
             Le calendrier des arts vivants pour les sociétés
         </div>
-        <form action="">
+        <form action="" noValidate>
             <input type="text" placeholder="Que recherchez-vous ?" />
             <input type="text" placeholder="Où ?" />
             <input type="date" />

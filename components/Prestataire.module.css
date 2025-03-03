@@ -17,7 +17,7 @@
 
 .banniere_prestataire {
     text-align: center;
-    background-image: url("../../public/ImageAffichage/salle.jpg");
+    background-image: url("../public/ImageAffichage/salle.jpg");
     object-fit: cover;
     padding: 0 20em 2em 20em;
     border-top: #FDFDFD 0.1px solid;
@@ -46,7 +46,8 @@
     margin-top: 3em;
 }
 
-.banniere_prestataire button:hover, .consultation button:hover {
+.banniere_prestataire button:hover,
+.consultation button:hover {
     cursor: pointer;
     background-color: #252659;
     border: .1rem solid #4B7CDC;

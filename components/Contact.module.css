@@ -85,21 +85,21 @@
     background-color: #005bb5;
 }
 
-.toast{
-        min-width: 250px;
-        background-color: #4caf50;
-        color: white;
-        text-align: center;
-        border-radius: 8px;
-        padding: 16px;
-        position: fixed;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1000;
-        font-size: 17px;
-        animation: fadeInOut 3s;
-    }
+.toast {
+    min-width: 250px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    font-size: 17px;
+    animation: fadeInOut 3s;
+}
 
 @keyframes fadeInOut {
     0% {

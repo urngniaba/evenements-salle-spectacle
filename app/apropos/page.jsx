@@ -12,6 +12,18 @@ import message4 from '@/public/ImageApropos/message4.png'
 import message5 from '@/public/ImageApropos/message5.png'
 import message6 from '@/public/ImageApropos/message6.png'
 
+
+/**
+     * @type {import("next").Metadata}
+     * 
+     */
+
+export const metadata = {
+  title: "A propos | Even Room",
+  description: "Presentation de la page d'acceuil d'Even Room",
+};
+
+
 // Page du menu a propos de nous
 export default function Apropos() {
   return <>

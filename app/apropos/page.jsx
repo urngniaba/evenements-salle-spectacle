@@ -20,7 +20,7 @@ import message6 from '@/public/ImageApropos/message6.png'
 
 export const metadata = {
   title: "A propos | Even Room",
-  description: "Presentation de la page d'acceuil d'Even Room",
+  description: "Presentation de la page a propos d'Even Room",
 };
 
 

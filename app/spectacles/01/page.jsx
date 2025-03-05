@@ -5,6 +5,16 @@ import Image from "next/image";
 import logo1 from '@/public/imageAffichage/concert.jpg';
 import DescriptionSpectacle from "@/components/DescriptionSpectacle";
 
+/**
+     * @type {import("next").Metadata}
+     * 
+     */
+
+export const metadata = {
+    title: "Balles | Even Room",
+    description: "Presentation de l'Evenement de danse",
+  };
+
 
 // Spectacle 01 : Balle de danse
 export default function Spectacle01() {

@@ -5,6 +5,19 @@ import Image from "next/image";
 import logo2 from '@/public/imageAffichage/acousti.jpg'
 import DescriptionSpectacle from "@/components/DescriptionSpectacle";
 
+
+/**
+     * @type {import("next").Metadata}
+     * 
+     */
+
+export const metadata = {
+    title: "Concert | Even Room",
+    description: "Presentation du Concert Acousti ",
+  };
+
+
+
 // Spectacle 02 : Concert acousti
 export default function Spectacle02() {
     return <>

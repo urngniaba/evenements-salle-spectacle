@@ -4,6 +4,16 @@ import Link from "next/link";
 
 import styles from '@/components/Connexion.module.css'
 
+/**
+     * @type {import("next").Metadata}
+     * 
+     */
+
+export const metadata = {
+    title: "Se connecter | Even Room",
+    description: "Connexion vers un compte d'Even Room",
+};
+
 // Formulaire de connexion
 export default function Connexion({ isOpen, onClose }) {
     if (!isOpen)

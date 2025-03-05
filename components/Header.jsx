@@ -14,7 +14,7 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <ul>
-                <li><Image src={logo} alt="Logo" className={styles.logo} /></li>
+                <li><Image src={logo} alt="Logo" className={styles.logo} priority /></li>
                 <li><Link href="/">Accueil</Link></li>
                 <li><Link href="/prestataire">Prestataire</Link></li>
                 <li><Link href="/apropos">&Agrave; propos de nous</Link></li>

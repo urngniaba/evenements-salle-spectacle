@@ -56,7 +56,7 @@ export default function Prestataire() {
     return <div className={styles.prestataire_body}>
         <div className={styles.banniere_prestataire}>
             <h1>Publier vos spectacles et répondez à des appels d'offre en seulement quelques clics</h1>
-            <h2>Avec spectacle en direct, vous boostez votre carrière et celle de vos artistes</h2>
+            <h2>Avec spectacle en direct, vous boostez votre carrière et celle des autres</h2>
             <Link href="#"><button>Je m'abonne</button></Link>
         </div>
         <div>

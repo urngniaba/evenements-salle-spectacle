@@ -17,7 +17,7 @@
 
 .banniere_prestataire {
     text-align: center;
-    background-image: url("../public/ImageAffichage/salle.webp");
+    background-image: url("../public/ImageAffichage/salle-reset.webp");
     object-fit: cover;
     padding: 0 20em 2em 20em;
     border-top: #FDFDFD 0.1px solid;
@@ -124,7 +124,7 @@
     }
 
     .banniere_prestataire {
-    background-image: url("../public/ImageAffichage/small-salle.webp");
+    background-image: url("../public/ImageAffichage/salle-reset.webp");
 }
 }
 
@@ -152,6 +152,6 @@
     }
     
     .banniere_prestataire {
-    background-image: url("../public/ImageAffichage/small-salle.webp");
+    background-image: url("../public/ImageAffichage/salle-reset.webp");
 }
 }

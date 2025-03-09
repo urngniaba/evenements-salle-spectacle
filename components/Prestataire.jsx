@@ -14,6 +14,45 @@ import img5 from "@/public/images/prestation/p5.jpg"
 
 // Page du menu Prestataire
 export default function Prestataire() {
+
+    const prestations = [
+        {
+            icon: img1,
+            content: "Inscription ouverte aux compagnies, collectifs, agences et autres prestataires de spectacle",
+        },
+        {
+            icon: img2,
+            content: "Rendez-vous visible de milliers de programmateurs privés et publics partout au Canada et au USA",
+        },
+        {
+            icon: img3,
+            content: "Publiez tous vos spectacles gratuitement depuis votre espace dédié",
+        },
+        {
+            icon: img4,
+            content: "Répondez à des dizaines de consultations publiés chaque mois",
+        },
+        {
+            icon: img5,
+            content: "Artistes freelance: trouvez de nouveaux contrats intermittents ou un contrat à durée indéterminé dans votre secteur",
+        },
+    ]
+
+    const prestationsVentes = [
+        {
+            numero: 1,
+            content: "Inscrivez vous sur Spectacle Direct et accédez à votre espace dédié",
+        },
+        {
+            numero: 2,
+            content: "Publiez autant de spectacles que vous le souhaitez pour apparaitre dans notre moteur de recherche",
+        },
+        {
+            numero: 3,
+            content: "Un commanditaire de spectacle vous contacte et vous négociez directement avec lui",
+        },
+    ]
+
     return <div className={styles.prestataire_body}>
         <div className={styles.banniere_prestataire}>
             <h1>Publier vos spectacles et répondez à des appels d'offre en seulement quelques clics</h1>
@@ -24,21 +63,13 @@ export default function Prestataire() {
             <h1> Entrez dans la communauté Spectacle direct</h1>
         </div>
         <div className={styles.prestataire}>
-            <Prestation icon={img1}>
-                Inscription ouverte aux compagnies, collectifs, agences et autres prestataires de spectacle
-            </Prestation>
-            <Prestation icon={img2}>
-                Rendez-vous visible de milliers de programmateurs privés et publics partout au Canada et au USA
-            </Prestation>
-            <Prestation icon={img3}>
-                Publiez tous vos spectacles gratuitement depuis votre espace dédié
-            </Prestation>
-            <Prestation icon={img4}>
-                Répondez à des dizaines de consultations publiés chaque mois
-            </Prestation>
-            <Prestation icon={img5}>
-                Artistes freelance: trouvez de nouveaux contrats intermittents ou un contrat à durée indéterminé dans votre secteur
-            </Prestation>
+            {prestations.map(prestation => (
+                <Prestation icon={prestation.icon}>
+                    {prestation.content}
+                </Prestation>
+
+            ))}
+
         </div>
         <div>
             <h1>
@@ -46,15 +77,12 @@ export default function Prestataire() {
             </h1>
         </div>
         <div className={styles.prestation_vente}>
-            <PrestionVente numero="1">
-                Inscrivez vous sur Spectacle Direct et accédez à votre espace dédié
-            </PrestionVente>
-            <PrestionVente numero="2">
-                Publiez autant de spectacles que vous le souhaitez pour apparaitre dans notre moteur de recherche
-            </PrestionVente>
-            <PrestionVente numero="3">
-                Un commanditaire de spectacle vous contacte et vous négociez directement avec lui
-            </PrestionVente>
+            {prestationsVentes.map(prestationsVente => (
+                <PrestionVente numero={prestationsVente.numero}>
+                    {prestationsVente.content}
+                </PrestionVente>
+            ))}
+
         </div>
         <div className={styles.consultation}>
             <h1>Répondez aux consultations déposées par des professionnels ou des particuliers</h1>

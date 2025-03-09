@@ -1,102 +1,113 @@
 .banniere {
-    text-align: center;
-    background-image: url("../public/banniere.jpeg");
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 1em;
-    border-top: #FDFDFD 0.1px solid;
+  text-align: center;
+  background-image: url("../public/banniere.webp");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 1em;
+  border-top: #fdfdfd 0.1px solid;
 }
 
 .banniere h1 {
-    color: white;
-    padding-top: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
-    text-transform: uppercase;
+  color: white;
+  padding-top: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 .banniere div {
-    background-color: #252659;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    padding: 0.5em;
-    margin: 2em auto;
-    border-radius: 1.1em 0 1.1em 0;
-    max-width: 50%;
-    opacity: 0.8;
-    border: .1rem solid white;
-    color: white;
-    font-weight: bold;
+  background-color: #252659;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  padding: 0.5em;
+  margin: 2em auto;
+  border-radius: 1.1em 0 1.1em 0;
+  max-width: 50%;
+  opacity: 0.8;
+  border: 0.1rem solid white;
+  color: white;
+  font-weight: bold;
 }
 
 .banniere form {
-    background-color: #ddd;
-    padding: 2em 1em;
-    margin: 3em auto;
-    border-radius: 2em;
-    opacity: 0.8;
-    max-width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
+  background-color: #ddd;
+  padding: 2em 1em;
+  margin: 3em auto;
+  border-radius: 2em;
+  opacity: 0.8;
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
 }
 
 .banniere input,
 .banniere button {
-    height: 3em;
-    width: 100%;
-    max-width: 15em;
-    border: none;
-    border-radius: 0.8em;
-    padding: 0 1em;
+  height: 3em;
+  width: 100%;
+  max-width: 15em;
+  border: none;
+  border-radius: 0.8em;
+  padding: 0 1em;
 }
 
 .banniere button {
-    background-color: #252659;
-    color: white;
-    font-weight: bold;
+  background-color: #252659;
+  color: white;
+  font-weight: bold;
 }
 
 .banniere button:hover {
-    cursor: pointer;
-    background-color: white;
-    color: #252659;
-    border: .1rem solid #252659;
+  cursor: pointer;
+  background-color: white;
+  color: #252659;
+  border: 0.1rem solid #252659;
 }
 
 .banniere p {
-    font-size: 1.3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;    
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.eventDate {
+  position: "absolute";
+  width: "1px";
+  height: "1px";
+  overflow: "hidden";
 }
 
 /* Responsive pour les petits écrans */
 @media (max-width: 768px) {
-    .banniere h1 {
-        font-size: 2rem;
-    }
+  .banniere h1 {
+    font-size: 2rem;
+  }
 
-    .cadre_jaune {
-        font-size: 1.5rem;
-        max-width: 80%;
-    }
+  .cadre_jaune {
+    font-size: 1.5rem;
+    max-width: 80%;
+  }
 
-    .zone_recherche {
-        flex-direction: column;
-        align-items: center;
-        max-width: 90%;
-    }
+  .zone_recherche {
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+  }
 
-    .banniere input,
-    .banniere button {
-        width: 100%;
-    }
+  .banniere input,
+  .banniere button {
+    width: 100%;
+  }
+
+   .banniere {
+    background-image: url('../public/small-banniere.webp');
+  }
 }
 
 /* Pour les grands écrans */
 @media (min-width: 769px) {
-    .zone_recherche {
-        flex-direction: row;
-    }
+  .zone_recherche {
+    flex-direction: row;
+  }
 }
+

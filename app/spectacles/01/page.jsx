@@ -2,7 +2,7 @@ import styles from "@/app/spectacles/spectacles.module.css";
 import Card from "@/components/Card";
 import EntetePage from "@/components/EntetePage";
 import Image from "next/image";
-import logo1 from '@/public/imageAffichage/concert.jpg';
+import logo1 from '@/public/imageAffichage/concert-reset.webp';
 import DescriptionSpectacle from "@/components/DescriptionSpectacle";
 
 /**

@@ -1,6 +1,6 @@
 .banniere {
   text-align: center;
-  background-image: url("../public/banniere.webp");
+  background-image: url("../public/small-banniere.webp");
   background-size: cover;
   background-position: center;
   padding-bottom: 1em;
@@ -97,10 +97,6 @@
   .banniere input,
   .banniere button {
     width: 100%;
-  }
-
-   .banniere {
-    background-image: url('../public/small-banniere.webp');
   }
 }
 

@@ -3,14 +3,14 @@ import EntetePage from "@/components/EntetePage";
 
 import styles from '@/app/apropos/page.module.css'
 
-import image2 from '@/public/ImageApropos/image2.jpg'
+import image2 from '@/public/ImageApropos/image2-reset.webp'
 
-import message1 from '@/public/ImageApropos/message1.png'
-import message2 from '@/public/ImageApropos/message2.png'
-import message3 from '@/public/ImageApropos/message3.png'
-import message4 from '@/public/ImageApropos/message4.png'
-import message5 from '@/public/ImageApropos/message5.png'
-import message6 from '@/public/ImageApropos/message6.png'
+import message1 from '@/public/ImageApropos/small-message1.webp'
+import message2 from '@/public/ImageApropos/small-message2.webp'
+import message3 from '@/public/ImageApropos/small-message3.webp'
+import message4 from '@/public/ImageApropos/small-message4.webp'
+import message5 from '@/public/ImageApropos/small-message5.webp'
+import message6 from '@/public/ImageApropos/small-message6.webp'
 
 
 /**

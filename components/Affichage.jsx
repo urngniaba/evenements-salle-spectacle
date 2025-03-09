@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Card from './Card';
-import logo1 from '@/public/imageAffichage/concert.jpg'
-import logo2 from '@/public/imageAffichage/acousti.jpg'
-import logo3 from '@/public/imageAffichage/image2.jpg'
-import logo4 from '@/public/imageAffichage/photo.jpg'
-import logo5 from '@/public/imageAffichage/salle.jpg'
-import logo6 from '@/public/imageAffichage/spectacle.jpg'
+import logo1 from '@/public/imageAffichage/concert-reset.webp'
+import logo2 from '@/public/imageAffichage/acousti-reset.webp'
+import logo3 from '@/public/imageAffichage/image2-reset.webp'
+import logo4 from '@/public/imageAffichage/photo-reset.webp'
+import logo5 from '@/public/imageAffichage/salle-reset.webp'
+import logo6 from '@/public/imageAffichage/spectacle-reset.webp'
 
 import styles from './affichage.module.css';
 

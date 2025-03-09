@@ -17,7 +17,7 @@ export default function Prestataire() {
     return <div className={styles.prestataire_body}>
         <div className={styles.banniere_prestataire}>
             <h1>Publier vos spectacles et répondez à des appels d'offre en seulement quelques clics</h1>
-            <h3>Avec spectacle en direct, vous boostez votre carrière et celle de vos artistes</h3>
+            <h2>Avec spectacle en direct, vous boostez votre carrière et celle de vos artistes</h2>
             <Link href="#"><button>Je m'abonne</button></Link>
         </div>
         <div>
@@ -58,7 +58,7 @@ export default function Prestataire() {
         </div>
         <div className={styles.consultation}>
             <h1>Répondez aux consultations déposées par des professionnels ou des particuliers</h1>
-            <h3>Sur Spectacle Direct vous pouvez répondre aux appels d'offre personnalisés des professionnels ou des particuliers qui recherchent un spectacle, une animation ou un artiste.</h3>
+            <h2>Sur Spectacle Direct vous pouvez répondre aux appels d'offre personnalisés des professionnels ou des particuliers qui recherchent un spectacle, une animation ou un artiste.</h2>
             <Link href="#"><button>Je m'inscris</button></Link>
         </div>
     </div>

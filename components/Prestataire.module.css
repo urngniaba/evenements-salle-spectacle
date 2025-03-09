@@ -17,23 +17,23 @@
 
 .banniere_prestataire {
     text-align: center;
-    background-image: url("../public/ImageAffichage/salle.jpg");
+    background-image: url("../public/ImageAffichage/salle.webp");
     object-fit: cover;
     padding: 0 20em 2em 20em;
     border-top: #FDFDFD 0.1px solid;
 }
 
 .banniere_prestataire h1,
-.banniere_prestataire h3,
+.banniere_prestataire h2,
 .consultation h1,
-.consultation h3 {
+.consultation h2 {
     color: white;
     padding-top: 1.5em;
 }
 
 .banniere_prestataire button,
 .consultation button {
-    background-color: #4B7CDC;
+    background-color: #0000FF;
     font-weight: bold;
     color: white;
     display: inline-block;
@@ -106,9 +106,9 @@
     }
 
     .banniere_prestataire h1,
-    .banniere_prestataire h3,
+    .banniere_prestataire h2,
     .consultation h1,
-    .consultation h3 {
+    .consultation h2 {
         font-size: 1.2em;
     }
 
@@ -122,6 +122,10 @@
         margin: 1em 2em;
         padding: 1em 2em;
     }
+
+    .banniere_prestataire {
+    background-image: url("../public/ImageAffichage/small-salle.webp");
+}
 }
 
 @media (max-width: 480px) {
@@ -138,7 +142,7 @@
         font-size: 1.5em;
     }
 
-    .banniere_prestataire h3 {
+    .banniere_prestataire h2 {
         font-size: 1em;
     }
 
@@ -146,4 +150,8 @@
         margin: 0.5em;
         padding: 0.5em;
     }
+    
+    .banniere_prestataire {
+    background-image: url("../public/ImageAffichage/small-salle.webp");
+}
 }

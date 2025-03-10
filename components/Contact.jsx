@@ -7,7 +7,6 @@ import { useActionState, useState } from "react";
 import { contactServeur } from "@/actions/contactServeur";
 
 export default function Contact() {
-
     const [success, setSuccess] = useState("Message de succes")
     const [isVisible, setIsVisible] = useState(false)
 
@@ -96,7 +95,6 @@ export default function Contact() {
                         <span className={styles.error}>{formState.telephone.erreur}</span>
                     </div>
                 </div>
-
                 <div className={styles.formGroup}>
                     <label htmlFor="objet">Objet</label>
                     <input
@@ -108,7 +106,6 @@ export default function Contact() {
                     />
                     <span className={styles.error}>{formState.objet.erreur}</span>
                 </div>
-
                 <div className={styles.formGroup}>
                     <label htmlFor="message">Message</label>
                     <textarea
@@ -120,9 +117,7 @@ export default function Contact() {
                     ></textarea>
                     <span className={styles.error}>{formState.message.erreur}</span>
                 </div>
-
                 <button type="submit">Envoyer</button>
-
                 {isVisible && <div className={styles.toast}>{success}</div>}
             </form>
         </div>

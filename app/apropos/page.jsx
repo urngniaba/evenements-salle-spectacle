@@ -1,18 +1,15 @@
 import Apropos from "@/components/APropos";
-/**
-     * @type {import("next").Metadata}
-     * 
-     */
 
+/**
+ * @type {import("next").Metadata}
+ * 
+ */
 export const metadata = {
   title: "A propos | Event Room",
   description: "Presentation de la page à propos d'Event Room",
 };
 
-
 // Page du menu a propos de nous
 export default function AproposPage() {
-  return <>
-    <Apropos />
-  </>
+  return <Apropos />
 }

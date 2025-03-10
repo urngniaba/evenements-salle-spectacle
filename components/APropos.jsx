@@ -9,15 +9,6 @@ import message4 from '@/public/ImageApropos/small-message4.webp'
 import message5 from '@/public/ImageApropos/small-message5.webp'
 import message6 from '@/public/ImageApropos/small-message6.webp'
 
-/**
-     * @type {import("next").Metadata}
-     * 
-     */
-export const metadata = {
-    title: "A propos | Event Room",
-    description: "Presentation de la page à propos d'Event Room",
-};
-
 // Page du menu a propos de nous
 export default function Apropos() {
     const features = [

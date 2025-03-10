@@ -1,0 +1,14 @@
+/* CSS de base des pages de spectacles */
+
+.spectacles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: top;
+  flex-wrap: wrap;
+}
+
+.spectacles h1,
+.spectacles h2 {
+  text-align: center;
+}

@@ -11,6 +11,63 @@ import styles from './affichage.module.css';
 
 
 export default function Affichage() {
+
+    const cards = [
+        {
+            titre: 'Balle de danse',
+            categorie: 'Ambiance festif',
+            sous_categorie: 'Musical',
+            description: 'Soiree dansante (Parade, défilé)',
+            bouton: 'Détail spectacle',
+            route: '/spectacles/01',
+            imageSrc: logo1,
+        },
+        {
+            titre: 'Concert acousti',
+            categorie: 'Opera',
+            sous_categorie: 'Silence Musical',
+            description: 'Soiree dansante (Parade, défilé)',
+            bouton: 'Détail spectacle',
+            route: 'spectacles/02',
+            imageSrc: logo2,
+        },
+        {
+            titre: 'Concert DJ exterieur',
+            categorie: 'Spectacle de rue',
+            sous_categorie: 'Mix et Remix, Platine',
+            description: 'Soiree dansante (Parade, défilé)',
+            bouton: 'Détail spectacle',
+            route: '#',
+            imageSrc: logo3,
+        },
+        {
+            titre: 'Scene Theatrales',
+            categorie: 'Spectacle de rue',
+            sous_categorie: 'Spectacle de rue',
+            description: 'Histoires (Drame, comedie)',
+            bouton: 'Détail spectacle',
+            route: '#',
+            imageSrc: logo4,
+        },
+        {
+            titre: 'Projection Cinematographique',
+            categorie: 'Meilleurs films',
+            sous_categorie: 'Livre et conte en pojection',
+            description: 'Films humour (clown, standUp)',
+            bouton: 'Détail spectacle',
+            route: '#',
+            imageSrc: logo5,
+        },
+        {
+            titre: 'Graines de Lumières',
+            categorie: 'Meilleurs films',
+            sous_categorie: 'Acapellat',
+            description: 'Concert Caritatif (cagnotte)',
+            bouton: 'Détail spectacle',
+            route: '#',
+            imageSrc: logo6,
+        }
+    ]
     // Partie de la page d'accueil contenant la liste des spectacle 
     return (
         <div className={styles.container}>
@@ -23,60 +80,16 @@ export default function Affichage() {
             <h2>Découvrez des spectacles inoubliables chez nous chez vous !</h2>
 
             <div className={styles.cardsContainer}>
-                <Card titre='Balle de danse'
-                    categorie='Ambiance festif'
-                    sous_categorie='Musical'
-                    description='Soiree dansante (Parade, défilé)'
-                    bouton='Détail spectacle'
-                    route='/spectacles/01'
-                    imageSrc={logo1}>
-                </Card>
-
-                <Card titre='Concert acousti'
-                    categorie='Opera'
-                    sous_categorie='Silence Musical'
-                    description='Soiree dansante (Parade, défilé)'
-                    bouton='Détail spectacle'
-                    route='spectacles/02'
-                    imageSrc={logo2}>
-                </Card>
-
-                <Card titre='Concert DJ exterieur'
-                    categorie='Spectacle de rue'
-                    sous_categorie='Mix et Remix, Platine'
-                    description='Soiree dansante (Parade, défilé)'
-                    bouton='Détail spectacle'
-                    route='#'
-                    imageSrc={logo3}>
-                </Card>
-
-                <Card titre='Scene Theatrales'
-                    categorie='Spectacle de rue'
-                    sous_categorie='Spectacle de rue'
-                    description='Histoires (Drame, comedie)'
-                    bouton='Détail spectacle'
-                    route='#'
-                    imageSrc={logo4}>
-                </Card>
-
-                <Card titre='Projection Cinematographique'
-                    categorie='Meilleurs films'
-                    sous_categorie='Livre et conte en pojection'
-                    description='Films humour (clown, standUp)'
-                    bouton='Détail spectacle'
-                    route='#'
-                    imageSrc={logo5}>
-                </Card>
-
-                <Card titre='Graines de Lumières'
-                    categorie='Meilleurs films'
-                    sous_categorie='Acapellat'
-                    description='Concert Caritatif (cagnotte)'
-                    bouton='Détail spectacle'
-                    route='#'
-                    imageSrc={logo6}>
-                </Card>
-
+                {cards.map(card => (
+                    <Card titre={card.titre}
+                        categorie={card.categorie}
+                        sous_categorie={card.sous_categorie}
+                        description={card.description}
+                        bouton={card.bouton}
+                        route={card.route}
+                        imageSrc={card.imageSrc}
+                    />
+                ))}
             </div>
         </div>
     );

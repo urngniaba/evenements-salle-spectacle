@@ -77,7 +77,8 @@ export default function Affichage() {
         <h2>Découvrez des spectacles inoubliables chez nous chez vous !</h2>
         <div className={styles.cardsContainer}>
             {cards.map(card => (
-                <Card titre={card.titre}
+                <Card key={card.titre}
+                    titre={card.titre}
                     categorie={card.categorie}
                     sous_categorie={card.sous_categorie}
                     description={card.description}

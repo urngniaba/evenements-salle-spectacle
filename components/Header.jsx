@@ -21,7 +21,7 @@ export default function Header() {
         <ul>
             <li><Image src={logo} alt="Logo" className={styles.logo} priority /></li>
             {menus.map(item => (
-                <li><Link href={item.href}>{item.text}</Link></li>
+                <li key={item.href}><Link href={item.href}>{item.text}</Link></li>
             ))}
             <li>
                 <div>

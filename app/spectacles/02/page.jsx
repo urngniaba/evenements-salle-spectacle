@@ -12,9 +12,9 @@ import DescriptionSpectacle from "@/components/DescriptionSpectacle";
      */
 
 export const metadata = {
-    title: "Concert | Even Room",
+    title: "Concert | Event Room",
     description: "Presentation du Concert Acousti ",
-  };
+};
 
 
 

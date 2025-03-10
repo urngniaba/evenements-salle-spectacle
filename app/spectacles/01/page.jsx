@@ -11,9 +11,9 @@ import DescriptionSpectacle from "@/components/DescriptionSpectacle";
      */
 
 export const metadata = {
-    title: "Balles | Even Room",
+    title: "Balles | Event Room",
     description: "Presentation de l'Evenement de danse",
-  };
+};
 
 
 // Spectacle 01 : Balle de danse

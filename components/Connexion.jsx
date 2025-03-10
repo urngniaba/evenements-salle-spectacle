@@ -10,8 +10,8 @@ import styles from '@/components/Connexion.module.css'
      */
 
 export const metadata = {
-    title: "Se connecter | Even Room",
-    description: "Connexion vers un compte d'Even Room",
+    title: "Se connecter | Event Room",
+    description: "Connexion vers un compte d'Event Room",
 };
 
 // Formulaire de connexion

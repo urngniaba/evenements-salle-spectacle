@@ -6,7 +6,7 @@ import Prestataire from "@/components/Prestataire"
      */
 
 export const metadata = {
-    title: "Prestation | Even Room",
+    title: "Prestation | Event Room",
     description: "Nos prestation d'Evenement ",
 };
 

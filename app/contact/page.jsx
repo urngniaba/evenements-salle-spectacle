@@ -6,12 +6,12 @@ import Contact from "@/components/Contact"
      */
 
 export const metadata = {
-  title: "Contact | Even Room",
+  title: "Contact | Event Room",
   description: "Contactez nous pour vos Evenement",
 };
 
 export default function PageContact() {
   return <>
-    <Contact/>
+    <Contact />
   </>
 }

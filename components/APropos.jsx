@@ -70,13 +70,13 @@ export default function Apropos() {
                 </p>
             </div>
             {features.map(feature => (
-                <>
+                <div key={feature.title}>
                     <div className={styles.artistesContainer}>
                         <p className={styles.artistesText}>{feature.title}</p>
                     </div>
                     <div className={styles.featuresContainer}>
                         {feature.items.map(feature => (
-                            <div className={styles.feature}>
+                            <div key={feature.content} className={styles.feature}>
                                 <Image src={feature.src} alt="" className={styles.featureImage} />
                                 <p className={styles.featureText}>
                                     {feature.content}
@@ -84,7 +84,7 @@ export default function Apropos() {
                             </div>
                         ))}
                     </div>
-                </>
+                </div>
             ))}
         </div>
     </>

@@ -76,7 +76,7 @@ export default function Apropos() {
                     </div>
                     <div className={styles.featuresContainer}>
                         {feature.items.map(feature => (
-                            <div key={feature.src} className={styles.feature}>
+                            <div key={feature.content} className={styles.feature}>
                                 <Image src={feature.src} alt="" className={styles.featureImage} />
                                 <p className={styles.featureText}>
                                     {feature.content}

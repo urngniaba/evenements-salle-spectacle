@@ -59,7 +59,7 @@ export default function Prestataire() {
         </div>
         <div className={styles.prestataire}>
             {prestations.map(prestation => (
-                <Prestation key={prestation.icon} icon={prestation.icon}>
+                <Prestation key={prestation.content} icon={prestation.icon}>
                     {prestation.content}
                 </Prestation>
             ))}

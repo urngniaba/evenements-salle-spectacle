@@ -1,11 +1,7 @@
 import styles from "@/components/Prestataire.module.css";
 import Link from "next/link";
-
-// composants
 import PrestionVente from "@/components/PrestationVente";
 import Prestation from "@/components/prestation";
-
-// images
 import img1 from "@/public/images/prestation/p1.jpg"
 import img2 from "@/public/images/prestation/p2.jpg"
 import img3 from "@/public/images/prestation/p3.jpg"
@@ -14,7 +10,6 @@ import img5 from "@/public/images/prestation/p5.jpg"
 
 // Page du menu Prestataire
 export default function Prestataire() {
-
     const prestations = [
         {
             icon: img1,
@@ -67,14 +62,10 @@ export default function Prestataire() {
                 <Prestation icon={prestation.icon}>
                     {prestation.content}
                 </Prestation>
-
             ))}
-
         </div>
         <div>
-            <h1>
-                Comment vendre sans intermédiaires vos prestations sur Spectacle Direct ?
-            </h1>
+            <h1>Comment vendre sans intermédiaires vos prestations sur Spectacle Direct ?</h1>
         </div>
         <div className={styles.prestation_vente}>
             {prestationsVentes.map(prestationsVente => (
@@ -82,7 +73,6 @@ export default function Prestataire() {
                     {prestationsVente.content}
                 </PrestionVente>
             ))}
-
         </div>
         <div className={styles.consultation}>
             <h1>Répondez aux consultations déposées par des professionnels ou des particuliers</h1>

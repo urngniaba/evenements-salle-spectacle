@@ -6,8 +6,6 @@ export default function PrestionVente({ children, numero }) {
         <div className={styles.numero}>
             <span>{numero}</span>
         </div>
-        <p>
-            {children}
-        </p>
+        <p> {children} </p>
     </div>
 }

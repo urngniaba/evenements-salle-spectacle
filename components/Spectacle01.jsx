@@ -9,7 +9,8 @@ export default function Spectacle01() {
     return <>
         <EntetePage
             titre1="BALLE DE DANSE"
-            titre2="Merveilleux balle avec une ambiance festive" />
+            titre2="Merveilleux balle avec une ambiance festive"
+        />
         <div className={styles.spectacles}>
             <Card titre='Balle de danse'
                 categorie='Lieu : 54 Newport Street, K1P 4J3'
@@ -17,11 +18,12 @@ export default function Spectacle01() {
                 description='Date : 25 Janvier 2025'
                 bouton='Faire une reservation'
                 route='#'
-                imageSrc={logo1}>
-            </Card>
+                imageSrc={logo1}
+            />
             <DescriptionSpectacle
                 titre="La nuit enchantée"
-                sous_titre="Un bal de danse spectaculaire à ne pas manquer !" >
+                sous_titre="Un bal de danse spectaculaire à ne pas manquer !"
+            >
                 <p>
                     Venez vivre une soirée magique lors de notre grand bal de danse ! Plongez dans une ambiance élégante et festive où la musique envoûtante et les performances captivantes se mêlent pour vous offrir une expérience inoubliable. Admirez les chorégraphies raffinées, laissez-vous emporter par le rythme et profitez d’un moment de convivialité avec des passionnés de danse. Que vous soyez spectateur ou danseur, ce bal promet de faire vibrer votre cœur.
                 </p>

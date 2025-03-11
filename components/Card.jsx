@@ -5,7 +5,7 @@ import Image from 'next/image';
 // Le composant representant un card
 export default function Card({ titre, categorie, sous_categorie, description, bouton, route, imageSrc }) {
     return <div className={styles.card}>
-        <Image src={imageSrc} alt="card" />
+        <Image src={imageSrc} alt="card"/>
         <h3>{titre}</h3>
         <div>
             <span>{categorie}</span>

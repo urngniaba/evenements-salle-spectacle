@@ -6,7 +6,7 @@ import Prestataire from "@/components/Prestataire"
  */
 export const metadata = {
     title: "Prestation | Event Room",
-    description: "Nos prestation d'Evenement ",
+    description: "Nos prestation d'Evenement de spectacles precisant Comment vendre sans intermédiaires vos prestations sur Spectacle Direct d'Event Room",
 };
 
 export default function PagePrestataire() {

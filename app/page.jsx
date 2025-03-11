@@ -8,7 +8,7 @@ import Affichage from "@/components/Affichage";
 
 export const metadata = {
     title: "Acceuil | Event Room",
-    description: "Presentation de la page d'acceuil d'Event Room",
+    description: "Presentation de la page d'acceuil, des differents spectacles inoubliables d'Event Room",
 };
 
 export default function Home() {

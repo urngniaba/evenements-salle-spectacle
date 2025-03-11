@@ -6,7 +6,7 @@ import Spectacle02 from "@/components/Spectacle02";
  */
 export const metadata = {
     title: "Concert | Event Room",
-    description: "Presentation du Concert Acousti ",
+    description: "Presentation des details du Concert Acousti: Vivez une soirée authentique avec notre concert acoustique de notre projet d'Event Room",
 };
 
 // Spectacle 02 : Concert acousti

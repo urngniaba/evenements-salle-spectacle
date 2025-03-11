@@ -6,7 +6,7 @@ import Contact from "@/components/Contact"
  */
 export const metadata = {
   title: "Contact | Event Room",
-  description: "Contactez nous pour vos Evenement",
+  description: "moyen de nous contactez pour vos Evenements inoubliables d'Event Room",
 };
 
 export default function PageContact() {

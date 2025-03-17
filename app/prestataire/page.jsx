@@ -9,6 +9,7 @@ export const metadata = {
     description: "Nos prestation d'Evenement de spectacles precisant Comment vendre sans intermédiaires vos prestations sur Spectacle Direct d'Event Room",
 };
 
+// page des Prestataires
 export default function PagePrestataire() {
-    return  <Prestataire />
+    return <Prestataire />
 }

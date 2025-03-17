@@ -11,7 +11,7 @@ export default function Connexion({ isOpen, onClose }) {
         <div className={styles.modal}>
             <button className={styles.closebtn} onClick={onClose}>✖</button>
             <h1>Créez votre compte</h1>
-
+            
             <form noValidate>
                 <input type="text" placeholder="Nom" required />
                 <input type="text" placeholder="Prénom" required />

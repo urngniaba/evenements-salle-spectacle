@@ -1,75 +1,75 @@
 .prestation_vente_etape {
-  background-color: #242947;
-  padding: 1em;
-  border-radius: 0.5em;
-  width: 100%;
-  max-width: 30%;
-  height: auto;
-  min-height: 12em;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin: 1em auto;
+    background-color: #242947;
+    padding: 1em;
+    border-radius: 0.5em;
+    width: 100%;
+    max-width: 30%;
+    height: auto;
+    min-height: 12em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 1em auto;
 }
 
 .prestation_vente_etape p {
-  color: white;
-  font-size: 1rem;
+    color: white;
+    font-size: 1rem;
 }
 
 .numero {
-  background-color: coral;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5em;
-  width: 5em;
-  position: absolute;
-  top: -2.5em;
-  left: 50%;
-  transform: translateX(-50%);
+    background-color: coral;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 5em;
+    position: absolute;
+    top: -2.5em;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .numero span {
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 768px) {
-  .prestation_vente_etape {
-    max-width: 80%;
-    padding: 1.5em;
-  }
+    .prestation_vente_etape {
+        max-width: 80%;
+        padding: 1.5em;
+    }
 
-  .numero {
-    height: 4em;
-    width: 4em;
-    font-size: 1.5rem;
-  }
+    .numero {
+        height: 4em;
+        width: 4em;
+        font-size: 1.5rem;
+    }
 
-  .prestation_vente_etape p {
-    font-size: 0.9rem;
-  }
+    .prestation_vente_etape p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
-  .prestation_vente_etape {
-    max-width: 90%;
-    padding: 1em;
-  }
+    .prestation_vente_etape {
+        max-width: 90%;
+        padding: 1em;
+    }
 
-  .numero {
-    height: 3.5em;
-    width: 3.5em;
-    font-size: 1.2rem;
-  }
+    .numero {
+        height: 3.5em;
+        width: 3.5em;
+        font-size: 1.2rem;
+    }
 
-  .prestation_vente_etape p {
-    font-size: 0.8rem;
-  }
+    .prestation_vente_etape p {
+        font-size: 0.8rem;
+    }
 }

@@ -1,135 +1,135 @@
 /* Conteneur principal */
 .contact {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  font-family: "Arial", sans-serif;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
 }
 
 /* Style des paragraphes d'information */
 .contact p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #333;
 }
 
 /* Mise en évidence des informations */
 .contact p span {
-  font-weight: 600;
-  color: #252659;
+    font-weight: 600;
+    color: #252659;
 }
 
 /* Style du formulaire */
 .contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 /* Conteneur pour les champs Email et Téléphone */
 .row {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 /* Chaque groupe de champ */
 .formGroup {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Labels */
 .contact form label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #555;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
 }
 
 /* Inputs et textarea */
 .contact form input,
 .contact form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  width: 100%;
-  box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Zone d'erreur */
 .error {
-  color: #e74c3c;
-  font-size: 0.875rem;
-  margin-top: 4px;
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 4px;
 }
 
 /* Bouton d'envoi */
 .contact form button {
-  padding: 12px;
-  background-color: #252659;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    padding: 12px;
+    background-color: #252659;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 /* Hover sur le bouton */
 .contact form button:hover {
-  background-color: #005bb5;
+    background-color: #005bb5;
 }
 
 .toast {
-  min-width: 250px;
-  background-color: #4caf50;
-  color: white;
-  text-align: center;
-  border-radius: 8px;
-  padding: 16px;
-  position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  font-size: 17px;
-  animation: fadeInOut 3s;
+    min-width: 250px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    font-size: 17px;
+    animation: fadeInOut 3s;
 }
 
 @keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
 
-  20% {
-    opacity: 1;
-  }
+    20% {
+        opacity: 1;
+    }
 
-  80% {
-    opacity: 1;
-  }
+    80% {
+        opacity: 1;
+    }
 
-  100% {
-    opacity: 0;
-  }
+    100% {
+        opacity: 0;
+    }
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .contact {
-    padding: 15px;
-  }
+    .contact {
+        padding: 15px;
+    }
 
-  .contact form textarea {
-    resize: vertical;
-  }
+    .contact form textarea {
+        resize: vertical;
+    }
 
-  .row {
-    flex-direction: column;
-  }
+    .row {
+        flex-direction: column;
+    }
 }

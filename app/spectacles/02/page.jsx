@@ -11,5 +11,5 @@ export const metadata = {
 
 // Spectacle 02 : Concert acousti
 export default function Spectacle02Page() {
-    return <Spectacle02/>
+    return <Spectacle02 />
 }

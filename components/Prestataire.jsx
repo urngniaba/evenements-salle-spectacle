@@ -8,10 +8,6 @@ import img3 from "@/public/images/prestation/p3.jpg"
 import img4 from "@/public/images/prestation/p4.jpg"
 import img5 from "@/public/images/prestation/p5.jpg"
 
-
-import BackgroundImage from "./BackgroundImage";
-import image from "@/public/ImageAffichage/salle.webp";
-
 // Page du menu Prestataire
 export default function Prestataire() {
     const prestations = [
@@ -58,7 +54,6 @@ export default function Prestataire() {
             <h2>Avec spectacle en direct, vous boostez votre carrière et celle des autres</h2>
             <Link href="#"><button>Je m'abonne</button></Link>
         </div>
-
         <div>
             <h1> Entrez dans la communauté Spectacle direct</h1>
         </div>

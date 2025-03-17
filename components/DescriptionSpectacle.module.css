@@ -1,66 +1,66 @@
 .descriptionSpectacle {
-  width: 50%;
-  padding: 20px;
-  margin: 20px auto;
-  box-sizing: border-box;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Titres */
 .descriptionSpectacle h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 .descriptionSpectacle h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #666;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #666;
 }
 
 /* Paragraphe */
 .descriptionSpectacle div {
-  text-align: left;
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #444;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #444;
 }
 
 /* Responsive pour mobiles */
 @media (max-width: 768px) {
-  .descriptionSpectacle {
-    width: 90%;
-    padding: 15px;
-  }
+    .descriptionSpectacle {
+        width: 90%;
+        padding: 15px;
+    }
 
-  .descriptionSpectacle h1 {
-    font-size: 1.75rem;
-  }
+    .descriptionSpectacle h1 {
+        font-size: 1.75rem;
+    }
 
-  .descriptionSpectacle h2 {
-    font-size: 1.25rem;
-  }
+    .descriptionSpectacle h2 {
+        font-size: 1.25rem;
+    }
 
-  .descriptionSpectacle div {
-    font-size: 0.95rem;
-  }
+    .descriptionSpectacle div {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 480px) {
-  .descriptionSpectacle {
-    width: 95%;
-    padding: 10px;
-  }
+    .descriptionSpectacle {
+        width: 95%;
+        padding: 10px;
+    }
 
-  .descriptionSpectacle h1 {
-    font-size: 1.5rem;
-  }
+    .descriptionSpectacle h1 {
+        font-size: 1.5rem;
+    }
 
-  .descriptionSpectacle h2 {
-    font-size: 1rem;
-  }
+    .descriptionSpectacle h2 {
+        font-size: 1rem;
+    }
 }

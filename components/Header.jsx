@@ -15,8 +15,8 @@ export default function Header() {
         { href: "/apropos", text: "A propos de nous" },
         { href: "/contact", text: "Nous constacter" },
     ]
-
     const [modalOpen, setModalOpen] = useState(false);
+    
     return <header className={styles.header}>
         <ul>
             <li><Image src={logo} alt="Logo" className={styles.logo} priority /></li>

@@ -1,145 +1,144 @@
-/* Styles de base */
 .container {
-  text-align: center;
-  padding: 1.3em 10em;
+    text-align: center;
+    padding: 1.3em 10em;
 }
 
 .photo {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
 }
 
 .paragraghe {
-  display: flex;
-  align-items: flex-start;
-  gap: 3rem;
-  max-width: 1400px;
-  width: 100%;
-  margin-left: 1.5em;
-  text-align: justify;
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 1400px;
+    width: 100%;
+    margin-left: 1.5em;
+    text-align: justify;
 }
 
 .photo1 {
-  width: 600px;
-  height: 300px;
-  border-radius: 22px;
-  object-fit: cover;
+    width: 600px;
+    height: 300px;
+    border-radius: 22px;
+    object-fit: cover;
 }
 
 .paragraghe p {
-  flex: 1;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-  margin: 0;
-  padding: 3rem 0.5;
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 3rem 0.5;
 }
 
 .citation {
-  font-weight: bold;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #555;
-  text-align: right;
-  margin: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
+    text-align: right;
+    margin: 0;
 }
 
 .artistesContainer {
-  background-color: #252659;
-  border-radius: 1.1em 0 1.1em 0;
-  padding: 1rem 2rem;
-  text-align: center;
-  margin: 2rem auto;
-  width: 70%;
-  opacity: 0.9;
+    background-color: #252659;
+    border-radius: 1.1em 0 1.1em 0;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    width: 70%;
+    opacity: 0.9;
 }
 
 .artistesText {
-  font-size: 18px;
-  color: white;
-  margin: 0;
+    font-size: 18px;
+    color: white;
+    margin: 0;
 }
 
 .featuresContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 0;
 }
 
 .feature {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 350px;
 }
 
 .featureImage {
-  width: 50px;
-  height: 40px;
-  margin-bottom: 1rem;
-  object-fit: cover;
+    width: 50px;
+    height: 40px;
+    margin-bottom: 1rem;
+    object-fit: cover;
 }
 
 .featureText {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
 }
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
-  .container {
-    padding: 1.3em 5em;
-  }
+    .container {
+        padding: 1.3em 5em;
+    }
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 1.3em 2em;
-  }
+    .container {
+        padding: 1.3em 2em;
+    }
 
-  .paragraghe {
-    flex-direction: column;
-    margin-left: 0;
-    text-align: center;
-  }
+    .paragraghe {
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+    }
 
-  .paragraghe p {
-    padding: 1rem;
-  }
+    .paragraghe p {
+        padding: 1rem;
+    }
 
-  .photo1 {
-    width: 100%;
-    height: auto;
-  }
+    .photo1 {
+        width: 100%;
+        height: auto;
+    }
 
-  .artistesContainer {
-    width: 90%;
-  }
+    .artistesContainer {
+        width: 90%;
+    }
 
-  .featuresContainer {
-    flex-direction: column;
-    align-items: center;
-  }
+    .featuresContainer {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .feature {
-    width: 100%;
-    max-width: 350px;
-  }
+    .feature {
+        width: 100%;
+        max-width: 350px;
+    }
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 1.3em 1em;
-  }
+    .container {
+        padding: 1.3em 1em;
+    }
 
-  .featureImage {
-    width: 40px;
-    height: 32px;
-  }
+    .featureImage {
+        width: 40px;
+        height: 32px;
+    }
 }

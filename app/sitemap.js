@@ -1,4 +1,8 @@
 /**
+ * La fonction sitemap vous permet de définir le fichier sitemap.xml pour votre site web.
+ * Ce fichier aide les moteurs de recherche à explorer et indexer efficacement 
+ * les pages de votre site en fournissant une liste structurée des URL disponibles.
+ * 
  * @returns {import("next").MetadataRoute.Sitemap}
  */
 export default function sitemap() {

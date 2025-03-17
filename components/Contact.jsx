@@ -6,6 +6,7 @@ import { contactValidation } from "@/validations/contactValidation";
 import { useActionState, useState } from "react";
 import { contactServeur } from "@/actions/contactServeur";
 
+// Page de contact
 export default function Contact() {
     const [success, setSuccess] = useState("Message de succes")
     const [isVisible, setIsVisible] = useState(false)
@@ -15,9 +16,7 @@ export default function Contact() {
      * @param {FormData} formData 
      */
     const handleSubmit = async (previousState, formData) => {
-
         let [erreur, newState] = contactValidation(formData)
-
         if (!erreur) {
             [erreur, newState] = await contactServeur(formData)
         }
@@ -32,7 +31,6 @@ export default function Contact() {
         else {
             setSuccess("Merci de nous avoir contacté !")
             setIsVisible(true)
-
             setTimeout(() => {
                 setIsVisible(false)
             }, 3000)

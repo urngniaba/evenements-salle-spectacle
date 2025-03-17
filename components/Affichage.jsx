@@ -8,6 +8,7 @@ import logo5 from '@/public/imageAffichage/salle-reset.webp'
 import logo6 from '@/public/imageAffichage/spectacle-reset.webp'
 import styles from './affichage.module.css';
 
+// Partie de la page d'accueil contenant la liste des spectacles affichés sous forme de carte
 export default function Affichage() {
     const cards = [
         {
@@ -66,7 +67,6 @@ export default function Affichage() {
         }
     ]
 
-    // Partie de la page d'accueil contenant la liste des spectacle 
     return <div className={styles.container}>
         <h1>Venez profiter de nos evenements avec des Spectacles inoubliable dans nos Salles!</h1>
         <p>

@@ -5,10 +5,11 @@ import Contact from "@/components/Contact"
  * 
  */
 export const metadata = {
-  title: "Contact | Event Room",
-  description: "moyen de nous contactez pour vos Evenements inoubliables d'Event Room",
+    title: "Contact | Event Room",
+    description: "moyen de nous contactez pour vos Evenements inoubliables d'Event Room",
 };
 
+// Page de contact
 export default function PageContact() {
-  return <Contact />
+    return <Contact />
 }

@@ -1,157 +1,157 @@
 .prestataire {
-    display: flex;
-    padding: 2em;
-    margin: 2em 6em;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  padding: 2em;
+  margin: 2em 6em;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .prestataire_body {
-    text-align: center;
+  text-align: center;
 }
 
 .image_prestation {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 .banniere_prestataire {
-    text-align: center;
-    background-image: url("../public/ImageAffichage/salle.webp");
-    background-size: cover;
-    padding: 0 20em 2em 20em;
-    border-top: #fdfdfd 0.1px solid;
+  text-align: center;
+  background-image: url("../public/ImageAffichage/salle.webp");
+  background-size: cover;
+  padding: 0 20em 2em 20em;
+  border-top: #fdfdfd 0.1px solid;
 }
 
 .banniere_prestataire h1,
 .banniere_prestataire h2,
 .consultation h1,
 .consultation h2 {
-    color: white;
-    padding-top: 1.5em;
+  color: white;
+  padding-top: 1.5em;
 }
 
 .banniere_prestataire button,
 .consultation button {
-    background-color: #0000ff;
-    font-weight: bold;
-    color: white;
-    display: inline-block;
-    margin-right: 3em;
-    height: 3em;
-    width: 15em;
-    border: 0.1rem solid #252659;
-    border-radius: 0.8em;
-    padding: 0 1em;
-    margin-top: 3em;
+  background-color: #0000ff;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin-right: 3em;
+  height: 3em;
+  width: 15em;
+  border: 0.1rem solid #252659;
+  border-radius: 0.8em;
+  padding: 0 1em;
+  margin-top: 3em;
 }
 
 .banniere_prestataire button:hover,
 .consultation button:hover {
-    cursor: pointer;
-    background-color: #252659;
-    border: 0.1rem solid #4b7cdc;
+  cursor: pointer;
+  background-color: #252659;
+  border: 0.1rem solid #4b7cdc;
 }
 
 .prestation_vente {
-    display: flex;
-    justify-content: space-between;
-    padding: 2em 6em;
-    margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 6em;
+  margin-top: 5em;
 }
 
 .consultation {
-    text-align: center;
-    background-color: #0b6d62;
-    margin: 2em 6em;
-    padding: 0 10em 2em 10em;
-    border-radius: 0.5em;
+  text-align: center;
+  background-color: #0b6d62;
+  margin: 2em 6em;
+  padding: 0 10em 2em 10em;
+  border-radius: 0.5em;
 }
 
 /* Media Queries pour le responsive */
 @media (max-width: 1024px) {
-    .prestataire {
-        margin: 2em 3em;
-        padding: 1em;
-        justify-content: center;
-    }
+  .prestataire {
+    margin: 2em 3em;
+    padding: 1em;
+    justify-content: center;
+  }
 
-    .prestation_vente {
-        flex-direction: column;
-        align-items: center;
-        padding: 2em 3em;
-    }
+  .prestation_vente {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 3em;
+  }
 
-    .banniere_prestataire {
-        padding: 0 5em 2em 5em;
-        background-position: center;
-    }
+  .banniere_prestataire {
+    padding: 0 5em 2em 5em;
+    background-position: center;
+  }
 }
 
 @media (max-width: 768px) {
-    .prestataire {
-        margin: 1em 2em;
-        padding: 1em;
-        justify-content: center;
-    }
+  .prestataire {
+    margin: 1em 2em;
+    padding: 1em;
+    justify-content: center;
+  }
 
-    .prestation_vente {
-        flex-direction: column;
-        align-items: center;
-        padding: 1em 2em;
-    }
+  .prestation_vente {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 2em;
+  }
 
-    .banniere_prestataire {
-        padding: 0 2em 2em 2em;
-    }
+  .banniere_prestataire {
+    padding: 0 2em 2em 2em;
+  }
 
-    .banniere_prestataire h1,
-    .banniere_prestataire h2,
-    .consultation h1,
-    .consultation h2 {
-        font-size: 1.2em;
-    }
+  .banniere_prestataire h1,
+  .banniere_prestataire h2,
+  .consultation h1,
+  .consultation h2 {
+    font-size: 1.2em;
+  }
 
-    .banniere_prestataire button,
-    .consultation button {
-        width: 100%;
-        margin: 1em 0;
-    }
+  .banniere_prestataire button,
+  .consultation button {
+    width: 100%;
+    margin: 1em 0;
+  }
 
-    .consultation {
-        margin: 1em 2em;
-        padding: 1em 2em;
-    }
+  .consultation {
+    margin: 1em 2em;
+    padding: 1em 2em;
+  }
 
-    .banniere_prestataire {
-        background-image: url("../public/ImageAffichage/salle-reset.webp");
-    }
+  .banniere_prestataire {
+    background-image: url("../public/ImageAffichage/salle-reset.webp");
+  }
 }
 
 @media (max-width: 480px) {
-    .prestataire {
-        margin: 0.5em;
-        padding: 0.5em;
-    }
+  .prestataire {
+    margin: 0.5em;
+    padding: 0.5em;
+  }
 
-    .banniere_prestataire {
-        padding: 0 1em 1em 1em;
-    }
+  .banniere_prestataire {
+    padding: 0 1em 1em 1em;
+  }
 
-    .banniere_prestataire h1 {
-        font-size: 1.5em;
-    }
+  .banniere_prestataire h1 {
+    font-size: 1.5em;
+  }
 
-    .banniere_prestataire h2 {
-        font-size: 1em;
-    }
+  .banniere_prestataire h2 {
+    font-size: 1em;
+  }
 
-    .consultation {
-        margin: 0.5em;
-        padding: 0.5em;
-    }
+  .consultation {
+    margin: 0.5em;
+    padding: 0.5em;
+  }
 
-    .banniere_prestataire {
-        background-image: url("../public/ImageAffichage/salle-reset.webp");
-    }
+  .banniere_prestataire {
+    background-image: url("../public/ImageAffichage/salle-reset.webp");
+  }
 }

@@ -1,7 +1,7 @@
 import styles from "@/components/Spectacle.module.css"
 import Card from "@/components/Card";
 import EntetePage from "@/components/EntetePage";
-import logo2 from '@/public/imageAffichage/acousti-reset.webp'
+import logo2 from '@/public/ImageAffichage/acousti-reset.webp'
 import DescriptionSpectacle from "@/components/DescriptionSpectacle";
 
 // Spectacle 02 : Concert acousti

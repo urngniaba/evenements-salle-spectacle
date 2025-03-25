@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Card from './Card';
-import logo1 from '@/public/imageAffichage/concert-reset.webp'
-import logo2 from '@/public/imageAffichage/acousti-reset.webp'
-import logo3 from '@/public/imageAffichage/image2-reset.webp'
-import logo4 from '@/public/imageAffichage/photo-reset.webp'
-import logo5 from '@/public/imageAffichage/salle-reset.webp'
-import logo6 from '@/public/imageAffichage/spectacle-reset.webp'
+import logo1 from '@/public/ImageAffichage/concert-reset.webp'
+import logo2 from '@/public/ImageAffichage/acousti-reset.webp'
+import logo3 from '@/public/ImageAffichage/image2-reset.webp'
+import logo4 from '@/public/ImageAffichage/photo-reset.webp'
+import logo5 from '@/public/ImageAffichage/salle-reset.webp'
+import logo6 from '@/public/ImageAffichage/spectacle-reset.webp'
 import styles from './affichage.module.css';
 
 // Partie de la page d'accueil contenant la liste des spectacles affichés sous forme de carte

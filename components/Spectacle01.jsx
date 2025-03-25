@@ -1,7 +1,7 @@
 import styles from "@/components/Spectacle.module.css";
 import Card from "@/components/Card";
 import EntetePage from "@/components/EntetePage";
-import logo1 from '@/public/imageAffichage/concert-reset.webp';
+import logo1 from '@/public/ImageAffichage/concert-reset.webp';
 import DescriptionSpectacle from "@/components/DescriptionSpectacle";
 
 // Spectacle 01 : Balle de danse

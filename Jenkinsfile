@@ -2,16 +2,22 @@ pipeline {
     agent any
 
     stages {
-        stage('First Stage') {
+        stage('Docker Login') {
             steps {
-                sh 'echo "This is the first stage."'
+                sh 'docker login -u ulrichromeo -p dckr_pat_1UApvmuUrthDRL3lo-yukoeQ9t8'
             }
         }
 
-        stage('Second Stage') {
+        stage('Pulling docker image') {
             steps {
-                sh 'echo "This is the second stage."'
+                sh 'docker pull ulrichromeo/my-events'
+            }
+        }
+        stage('Running events container') {
+            steps {
+                sh 'docker run -dt --name ctr-1 -p 3000:3000 ulrichromeo/my-events'
             }
         }
     }
 }
+

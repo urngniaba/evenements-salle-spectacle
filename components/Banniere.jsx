@@ -3,7 +3,7 @@ import styles from "@/components/Banniere.module.css"
 // La partie contenant la grande image juste en dessous de la barre de mennu sur la page d'accueil
 export default function Banniere() {
     return <div className={styles.banniere}>
-        <h1>Vivez l’instant suspendu, le spectacle libre et vivant</h1>
+        <h1>Vivez l’instant suspendu avec le spectacle libre et vivant</h1>
         <div>
             Le calendrier des arts vivants pour les sociétés
         </div>
@@ -21,3 +21,4 @@ export default function Banniere() {
         </p>
     </div>
 }
+

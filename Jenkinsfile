@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Running events container') {
             steps {
-                sh '/usr/bin/docker run -dt --name ctr-1 -p 3000:3000 ulrichromeo/my-events'
+                sh '/usr/bin/docker run -dt -p 3000:3000 ulrichromeo/my-events'
             }
         }
     }

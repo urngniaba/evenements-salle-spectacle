@@ -10,7 +10,7 @@ import Connexion from "@/components/Connexion";
 // La barre de menu d'entete de la page
 export default function Header() {
     const menus = [
-        { href: "/", text: "Accueil" },
+        { href: "/", text: "Home" },
         { href: "/prestataire", text: "Prestataire" },
         { href: "/apropos", text: "A propos de nous" },
         { href: "/contact", text: "Nous constacter" },
@@ -32,3 +32,4 @@ export default function Header() {
         </ul>
     </header>
 }
+

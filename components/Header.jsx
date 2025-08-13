@@ -12,7 +12,7 @@ export default function Header() {
     const menus = [
         { href: "/", text: "Home" },
         { href: "/prestataire", text: "Prestataire" },
-        { href: "/apropos", text: "A propos de nous" },
+        { href: "/apropos", text: "About us" },
         { href: "/contact", text: "Nous constacter" },
     ]
     const [modalOpen, setModalOpen] = useState(false);
@@ -32,4 +32,5 @@ export default function Header() {
         </ul>
     </header>
 }
+
 

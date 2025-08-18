@@ -2,28 +2,64 @@ pipeline {
     agent any
 
     stages {
-        stage('Checking Docker version') {
+        stage('Checkout') {
             steps {
-                sh '/usr/bin/docker docker -v'
-            }
-        }
-        
-        stage('Docker Login') {
-            steps {
-                sh '/usr/bin/docker login -u ulrichromeo -p dckr_pat_1UApvmuUrthDRL3lo-yukoeQ9t8'
+                git branch: 'main', url: 'https://github.com/yourusername/events-app.git'
             }
         }
 
-        stage('Pulling docker image') {
+        stage('Install Git & Docker via Ansible') {
             steps {
-                sh '/usr/bin/docker pull ulrichromeo/my-events'
+                sh 'ansible-playbook -i install-tools.yaml'
             }
         }
-        stage('Running events container') {
+
+        stage('Build Docker Image') {
             steps {
-                sh '/usr/bin/docker run -dt ulrichromeo/my-events'
+                sh 'docker build -t events-app .'
+            }
+        }
+
+        stage('Run Container') {
+            steps {
+                sh '''
+                docker stop events-app || true
+                docker rm events-app || true
+                docker run -d -p 5000:5000 --name events-app events-app
+                '''
             }
         }
     }
 }
+
+
+
+// pipeline {
+//     agent any
+
+//     stages {
+//         stage('Checking Docker version') {
+//             steps {
+//                 sh '/usr/bin/docker docker -v'
+//             }
+//         }
+        
+//         stage('Docker Login') {
+//             steps {
+//                 sh '/usr/bin/docker login -u ulrichromeo -p dckr_pat_1UApvmuUrthDRL3lo-yukoeQ9t8'
+//             }
+//         }
+
+//         stage('Pulling docker image') {
+//             steps {
+//                 sh '/usr/bin/docker pull ulrichromeo/my-events'
+//             }
+//         }
+//         stage('Running events container') {
+//             steps {
+//                 sh '/usr/bin/docker run -dt ulrichromeo/my-events'
+//             }
+//         }
+//     }
+// }
 

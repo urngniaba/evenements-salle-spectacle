@@ -8,5 +8,5 @@ RUN npm run build
 FROM node:18-alpine
 WORKDIR /app
 COPY --from=base-image /app .
-EXPOSE 3000
+EXPOSE 5000
 ENTRYPOINT ["npm","start"]
